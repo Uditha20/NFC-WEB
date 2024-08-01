@@ -117,3 +117,9 @@ body {
 .hero-section img {
     animation: upAndDown 3s ease-in-out infinite;
 }
+
+.box{
+    height: 200px;
+    width: 200px;
+}
+
