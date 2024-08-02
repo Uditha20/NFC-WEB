@@ -35,8 +35,6 @@ body {
   color: var(--text-color);
   z-index: 2;
   padding: 8px 15px;
-
-
 }
 
 .navbar-nav .nav-item {
@@ -68,58 +66,110 @@ body {
   padding: 0 15px;
 }
 
-
 .hero-section {
-    background: linear-gradient(to right, var(--main-color), #1b1e34); 
-    padding: 35px;
-    color: var(--text-color);
-    height: auto;
+  background: linear-gradient(to right, var(--main-color), #1b1e34);
+  padding: 35px;
+  color: var(--text-color);
+  height: auto;
 }
 
 .hero-section h2 {
-    font-size: 2.5rem; 
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 50px;
 }
 
 .hero-section .highlight {
-    color: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 .hero-section p {
-    font-size: 1.2rem; 
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .hero-section .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 .hero-section .btn-light {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .hero-section img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 @keyframes upAndDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .hero-section img {
-    animation: upAndDown 3s ease-in-out infinite;
+  animation: upAndDown 3s ease-in-out infinite;
 }
 
-.box{
-    height: 200px;
-    width: 200px;
+.box {
+  height: 200px;
+  width: 200px;
 }
 
+.accordion-button {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-top: 1px solid #444;
+}
+
+.accordion-item {
+  border: 1px solid #444;
+}
+
+.faq-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.faq-paragraph {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.empower-box-small {
+  height: auto;
+  width: 400px;
+}
+.empower-box-big {
+  height: auto;
+  width: 400px;
+}
+
+.empower-text {
+  margin-top: 10px;
+  text-align: center;
+}
