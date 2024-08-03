@@ -193,3 +193,17 @@ body {
   margin-left: 5px;
   color: var(--text-color);
 }
+
+.about-us-card {
+  text-align: center;
+  height: auto;
+  background-color: rgba(126, 125, 125, 0.2);
+}
+
+.about-us-card h6{
+ line-height: 25px;
+}
+
+.about-us-card i{
+  font-size: 1.5rem;
+}
