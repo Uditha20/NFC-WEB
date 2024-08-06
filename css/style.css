@@ -207,3 +207,14 @@ body {
 .about-us-card i{
   font-size: 1.5rem;
 }
+
+.design{
+ height: 450px;
+
+}
+
+.design-left{
+  height: 450px;
+  background-color: rgba(126, 125, 125, 0.2);
+  padding: 30px;
+}
