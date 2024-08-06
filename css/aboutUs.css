@@ -131,3 +131,14 @@
   background: linear-gradient(to right, var(--main-color), #1b1e34);
   
   }
+
+  .about-us-text {
+    text-align: center;
+  }
+  
+  .faq-paragraph {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
