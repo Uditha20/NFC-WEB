@@ -218,3 +218,6 @@ body {
   background-color: rgba(126, 125, 125, 0.2);
   padding: 30px;
 }
+.card {
+  margin-bottom: 1rem;
+}
