@@ -234,7 +234,7 @@
 
     <div>
       <div class="container-fluid mt-3">
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-between">
           <div class="col-md-5 p-5">
             <div
               class="design-left d-flex justify-content-center"
@@ -290,7 +290,9 @@
     <div class="container-fluid mt-3">
       <div class="row align-items-center" style="padding: 30px">
         <div class="col-md-5" style="padding-left: 20px">
-          <h2 style="line-height: 45px">Choose the Perfect Smart Card Package for Your Needs</h2>
+          <h2 style="line-height: 45px">
+            Choose the Perfect Smart Card Package for Your Needs
+          </h2>
         </div>
 
         <div class="col-md-7">
@@ -310,11 +312,9 @@
 
     <div class="container-fluid mt-3">
       <div class="row" style="padding: 30px">
-       <div class="col-md-12 d-flex justify-content-center">
-        <img src="./asset/img/big.png" class="img-fluid"/>
-       </div>
-
-       
+        <div class="col-md-12 d-flex justify-content-center">
+          <img src="./asset/img/big.png" class="img-fluid" />
+        </div>
       </div>
     </div>
 
@@ -337,15 +337,40 @@
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
+                  data-bs-target="#flush-collapsesix"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  aria-controls="flush-collapsesix"
                 >
                   Accordion Item #1
                 </button>
               </h2>
               <div
-                id="flush-collapseOne"
+                id="flush-collapsesix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsefive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapsefive"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="flush-collapsefive"
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
@@ -380,31 +405,8 @@
                   the first item's accordion body.
                 </div>
               </div>
-            </div>  <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
-                </div>
-              </div>
-            </div>  <div class="accordion-item">
+            </div>
+            <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -489,27 +491,25 @@
       </div>
     </div>
 
-
-
-<div class="container-fluid">
-  <div class="row d-flex justify-content-between align-items-center">
-    <div class="col-6 p-5">
-     <h1>
-      Discover the power of NFC
-     </h1>
-     <p class="faq-paragraph">Experience seamless communication with our smart NFC cards</p>
-      <button type="button" class="btn btn-light me-2">Try</button>
-      <button type="button" class="btn btn-outline-light">Design</button>
-     </div>
-     <div class="col-4 p-5">
-       <img
-       src="./asset/img/about_pic1.png"
-       class="img-fluid"
-       alt="Hero Section Image"
-     />
-     </div>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-6 p-5">
+          <h1>Discover the power of NFC</h1>
+          <p class="faq-paragraph">
+            Experience seamless communication with our smart NFC cards
+          </p>
+          <button type="button" class="btn btn-light me-2">Try</button>
+          <button type="button" class="btn btn-outline-light">Design</button>
+        </div>
+        <div class="col-4 p-5">
+          <img
+            src="./asset/img/about_pic1.png"
+            class="img-fluid"
+            alt="Hero Section Image"
+          />
+        </div>
+      </div>
     </div>
-</div>
 
     <div class="container-fluid">
       <div class="row">
@@ -621,5 +621,64 @@
         </button>
       </div>
     </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <p class="text-center mt-5">Webflow</p>
+              <p class="text-center">
+                Our experience with Manjithaaza has been outstanding. Their smart NFC
+                cards have revolutionized the way we exchange contact information.
+              </p>
+              <div class="text-center">
+                <i class="bi bi-person-circle" style="font-size: 2.5rem;"></i>
+                <p class="mt-2">John Doe</p>
+                <p>CEO, XYZ Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <p class="text-center mt-5">Another Company</p>
+              <p class="text-center">
+                Manjithaaza's NFC cards have made our networking effortless. A must-have
+                for modern professionals.
+              </p>
+              <div class="text-center">
+                <i class="bi bi-person-circle" style="font-size: 2.5rem;"></i>
+                <p class="mt-2">Jane Smith</p>
+                <p>COO, ABC Corp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="">
+          <p class="text-center">Articles</p>
+          <h3 class="text-center">Discover Valuable Resources Here</h3>
+          <p class="text-center">Stay Informed with Our Latest Articles</p>
+        </div>
+      </div>
+    </div>
+    <hr style="height:2px;border-width:0;color:white;background-color:white">
   </body>
 </html>
