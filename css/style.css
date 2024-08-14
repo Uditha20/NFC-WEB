@@ -2,6 +2,7 @@
 :root {
   --main-color: #000315;
   --text-color: #ffffff;
+  --second-color:#E7AF41;
 }
 
 body {
@@ -79,12 +80,13 @@ body {
   height: auto;
 }
 
-.hero-section h2 {
+.hero-section h2,h1 {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 50px;
 }
+
 
 .hero-section .highlight {
   color: var(--highlight-color);
@@ -244,3 +246,6 @@ body {
   line-height: 1.2rem;
 }
 
+.contact-details i{
+  color: var(--second-color);
+}
