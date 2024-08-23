@@ -34,7 +34,8 @@
   
   .card {
     color: var(--text-color);
-    height: 380px;
+    min-height: 560px;
+    /* height: auto; */
   }
   
   .nav-link,

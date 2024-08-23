@@ -2,6 +2,7 @@
 :root {
   --main-color: #000315;
   --text-color: #ffffff;
+  --second-color: #e7af41;
 }
 
 body {
@@ -76,10 +77,13 @@ body {
   background: linear-gradient(to right, var(--main-color), #1b1e34);
   padding: 35px;
   color: var(--text-color);
+  min-height: 350px;
+
   height: auto;
 }
 
-.hero-section h2 {
+.hero-section h2,
+h1 {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -181,7 +185,7 @@ body {
 }
 
 .read-more-link {
-  color: var(--text-color);
+  color: var(--second-color);
   text-decoration: none;
 }
 
@@ -191,7 +195,7 @@ body {
 
 .read-more-link i {
   margin-left: 5px;
-  color: var(--text-color);
+  color: var(--second-color);
 }
 
 .about-us-card {
@@ -238,9 +242,311 @@ body {
 
 .card {
   margin-bottom: 1rem;
+  min-height: 450px;
 }
 
 .contact-details p {
   line-height: 1.2rem;
 }
 
+.contact-details i {
+  color: var(--second-color);
+}
+.learn-more-btn {
+  background-color: #e7af41;
+  color: white;
+}
+
+.contact-us-btn {
+  outline: 2px solid var(--second-color);
+  color:var(--text-color);
+}
+
+.innovate-section-two{
+  background-color: rgba(126, 125, 125, 0.2);
+ 
+}
+
+.hero-section {
+  overflow: hidden;
+}
+
+.hero-section h2,
+.hero-section p,
+.hero-section button,
+.hero-section img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-section.loaded h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero-section.loaded p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.hero-section.loaded button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.hero-section.loaded img {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* section-transitions.css */
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-section p:first-child {
+  font-size: 1.2rem;
+  color: #f1d68f;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.animate-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.animate-section h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #f1d68f;
+  transition: width 0.5s ease;
+}
+
+.animate-section.visible h1::after {
+  width: 100%;
+  transition-delay: 0.5s;
+}
+
+.animate-section p:last-child {
+  font-size: 1rem;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .animate-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* card-animations.css */
+.animated-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animated-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.animated-card i {
+  transition: transform 0.3s ease;
+}
+
+.animated-card:hover i {
+  transform: scale(1.1);
+}
+
+/* Staggered animation delays */
+.animated-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.animated-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.animated-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.animated-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.animated-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+/* Add more nth-child rules if you have more cards */
+
+@media (max-width: 768px) {
+  .animated-card {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+/* Add this to your existing CSS file or create a new one */
+/* General animation classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Design section specific classes */
+.design-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.design-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-image {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Button animation */
+.animate-button {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.animate-button.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Staggered animation delays */
+.stagger-delay-1 { transition-delay: 0.1s; }
+.stagger-delay-2 { transition-delay: 0.2s; }
+.stagger-delay-3 { transition-delay: 0.3s; }
+.stagger-delay-4 { transition-delay: 0.4s; }
+.stagger-delay-5 { transition-delay: 0.5s; }
+
+
+
+.fade-in-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-slide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rotate and fade-in effect */
+.rotate-fade-in {
+  opacity: 0;
+  transform: rotate(-10deg);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.rotate-fade-in.visible {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+/* Scale up with fade-in effect */
+.scale-up {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scale-up.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hover-up {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hover-up:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Initial state for the section (hidden and translated down) */
+.faq-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animation state (when the section is in view) */
+.faq-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
