@@ -550,3 +550,18 @@ h1 {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* New Class for Animation */
+.empower-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.empower-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

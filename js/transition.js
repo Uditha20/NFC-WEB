@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
       faqSection.classList.add('visible');
       
     }
+    const elements = document.querySelectorAll('.empower-animation');
+    elements.forEach(el => animateElement(el));
+    
     const animateSections = document.querySelectorAll('.animate-section');
     animateSections.forEach(section => {
       if (animateElement(section)) animationsOccurred = true;
