@@ -1,7 +1,8 @@
 /* Define CSS variables */
 :root {
-    --main-color: #000315;
-    --text-color: #ffffff;
+  --main-color: #000315;
+  --text-color: #ffffff;
+  --second-color: #e7af41;
   }
   
   body {
@@ -145,4 +146,16 @@
   }
   .about-us-card i{
     font-size: 1.5rem;
+  }
+
+
+  /* new common */
+  .contact-us-btn {
+    outline: 2px solid var(--second-color);
+    color:var(--text-color);
+  }
+
+  .learn-more-btn {
+    background-color: #e7af41;
+    color: white;
   }
