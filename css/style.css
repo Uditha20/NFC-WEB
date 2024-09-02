@@ -265,6 +265,10 @@ h1 {
   background-color: #e7af41;
   color: white;
 }
+.learn-more-btn:hover {
+  background-color: #e7af41;
+  color: white;
+}
 
 .contact-us-btn {
   outline: 2px solid var(--second-color);

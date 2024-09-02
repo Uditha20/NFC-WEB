@@ -1,81 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aboutUs page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- style sheet -->
-    <!-- <link rel="stylesheet" href="./css/aboutUs.css" /> -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- nav bar -->
-    <div class="container-fluid mt-3">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"
-              ><img src="./asset/img/navlogo.png" alt=""
-            /></a>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn contact-us-btn">Learn</button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn me-2 learn-more-btn">
-                  Log In
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <?php
+    include "./include/header.php"
+    ?>
     <!-- about us 1st section -->
     <div class="container-fluid mt-3">
       <div class="row hero-section align-items-center">
@@ -94,8 +19,7 @@
           <img
             src="./asset/img/manjeeza.png"
             class="img-fluid"
-            alt="Hero Section Image"
-          />
+            alt="Hero Section Image" />
         </div>
       </div>
     </div>
@@ -123,14 +47,12 @@
             <button
               type="button"
               class="btn contact-us-btn mt-2 animate-button"
-              style="margin-right: 20px"
-            >
+              style="margin-right: 20px">
               Learn More
             </button>
             <button
               type="button"
-              class="btn learn-more-btn mt-2 animate-button"
-            >
+              class="btn learn-more-btn mt-2 animate-button">
               Sign Up
             </button>
           </div>
@@ -143,8 +65,7 @@
         <div class="row">
           <div
             class="col-md-6 p-5 d-flex justify-content-center"
-            style="flex-direction: column"
-          >
+            style="flex-direction: column">
             <h2 style="line-height: 2.7rem">
               Empowering Professionals and <br />
               Youth with Smart NFC Cards
@@ -181,8 +102,7 @@
             <img
               src="./asset/img/about_pic1.png"
               class="img-fluid"
-              alt="Hero Section Image"
-            />
+              alt="Hero Section Image" />
           </div>
         </div>
       </div>
@@ -270,8 +190,7 @@
           <img
             src="./asset/img/about_pic1.png"
             class="img-fluid"
-            alt="Hero Section Image"
-          />
+            alt="Hero Section Image" />
           <h6 class="about-us-text mt-3">John Doe</h6>
           <h6 class="about-us-text">CEO</h6>
           <h6 class="about-us-text">
@@ -288,8 +207,7 @@
           <img
             src="./asset/img/about_pic1.png"
             class="img-fluid"
-            alt="Hero Section Image"
-          />
+            alt="Hero Section Image" />
           <h6 style="text-align: center" class="mt-3">Jane Smith</h6>
           <h6 style="text-align: center">CTO</h6>
           <h6 style="text-align: center">
@@ -309,8 +227,7 @@
         <img
           src="./asset/img/about_pic1.png"
           class="img-fluid"
-          alt="Hero Section Image"
-        />
+          alt="Hero Section Image" />
         <h6 style="text-align: center" class="mt-3">David Johnson</h6>
         <h6 style="text-align: center">Marketing Manager</h6>
         <h6 style="text-align: center">
@@ -327,8 +244,7 @@
         <img
           src="./asset/img/about_pic1.png"
           class="img-fluid"
-          alt="Hero Section Image"
-        />
+          alt="Hero Section Image" />
         <h6 style="text-align: center" class="mt-3">Sarah Williams</h6>
         <h6 style="text-align: center">Finance Director</h6>
         <h6 style="text-align: center">
@@ -354,8 +270,7 @@
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn learn-more-btn justify-content-center pt-1 px-4 mt-3"
-            >
+              class="btn learn-more-btn justify-content-center pt-1 px-4 mt-3">
               Open Position
             </button>
           </div>
@@ -369,8 +284,7 @@
         <div class="row d-flex justify-content-around align-items-center">
           <div
             class="col-md-5 p-5 box-container d-flex justify-content-center"
-            style="flex-direction: column; height: 500px;margin-left: 5px;"
-          >
+            style="flex-direction: column; height: 500px;margin-left: 5px;">
             <h2>
               Unlock the power of smart <br />technology with Manjithaaza's
               innovative solutions.
@@ -385,8 +299,7 @@
             <img
               src="./asset/img/about_pic1.png"
               class="img-fluid"
-              alt="Hero Section Image"
-            />
+              alt="Hero Section Image" />
           </div>
         </div>
       </div>
@@ -395,8 +308,7 @@
     <div
       id="testimonialCarousel"
       class="carousel slide"
-      data-bs-ride="carousel"
-    >
+      data-bs-ride="carousel">
       <div class="carousel-inner">
         <!-- First item -->
         <div class="carousel-item active">
@@ -440,8 +352,7 @@
         class="carousel-control-prev"
         type="button"
         data-bs-target="#testimonialCarousel"
-        data-bs-slide="prev"
-      >
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -449,8 +360,7 @@
         class="carousel-control-next"
         type="button"
         data-bs-target="#testimonialCarousel"
-        data-bs-slide="next"
-      >
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -473,47 +383,14 @@
             <img
               src="./asset/img/about_pic1.png"
               class="img-fluid"
-              alt="Hero Section Image"
-            />
+              alt="Hero Section Image" />
           </div>
         </div>
       </div>
     </div>
 
-    <!-- footer -->
-    <div class="container-fluid mt-3">
-      <div class="row d-flex justify-content-center">
-        <div style="text-align: center">
-          <img src="./asset/img/navlogo.png" class="img-fluid" alt="nav imag" />
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid mt-3">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-7">
-          <div class="footer row mt-3 text-center text-md-start">
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">About Us</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Product</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Service</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Contact</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">FAQ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center" style="padding: 30px">
-        <hr
-          style="
-            height: 4px;
-            border-width: 0;
-            color: white;
-            background-color: white;
-          "
-        />
-      </div>
-    </div>
-  </body>
-  <script src="./js/transition.js"></script>
-</html>
+    <?php
+  
+  
+  include "./include/footer.php"
+  ?>
