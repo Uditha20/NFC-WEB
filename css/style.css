@@ -2,32 +2,39 @@
 :root {
   --main-color: #000315;
   --text-color: #ffffff;
+  --second-color: #e7af41;
 }
 
 body {
   background-color: var(--main-color);
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
-  margin-top: 10px;
+  margin-top: 0;
   padding: 0;
 }
 
-.navbar {
+.navbar,
+.card {
   background-color: var(--main-color);
   position: relative;
   z-index: 1;
 }
 
-.navbar::before {
+.navbar::before,
+.card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(141, 137, 137, 0.2);
   z-index: -1;
   border-radius: 5px;
+}
+
+.card {
+  color: var(--text-color);
 }
 
 .nav-link,
@@ -65,3 +72,521 @@ body {
 .container-fluid {
   padding: 0 15px;
 }
+
+.hero-section {
+  background: linear-gradient(to right, var(--main-color), #1b1e34);
+  padding: 35px;
+  color: var(--text-color);
+  min-height: 350px;
+
+  height: auto;
+}
+
+.hero-section h2,
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.hero-section .highlight {
+  color: var(--highlight-color);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.hero-section .btn-light {
+  margin-right: 10px;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}
+@keyframes upAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-section img {
+  animation: upAndDown 3s ease-in-out infinite;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.accordion-button {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-top: 1px solid #444;
+}
+
+.accordion-item {
+  border: 1px solid #444;
+}
+
+.faq-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.faq-paragraph {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.empower-box-small {
+  height: auto;
+  width: 400px;
+}
+.empower-box-big {
+  height: auto;
+  width: 400px;
+}
+
+.empower-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.read-more-link {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: none;
+}
+
+.read-more-link i {
+  margin-left: 5px;
+  color: var(--second-color);
+}
+
+.about-us-card {
+  text-align: center;
+  height: auto;
+  background-color: rgba(126, 125, 125, 0.2);
+}
+
+.box-container{
+  background-color:rgba(126, 125, 125, 0.2);
+}
+
+.about-us-card h6 {
+  line-height: 25px;
+}
+
+.about-us-card i {
+  font-size: 1.5rem;
+}
+
+.design-left {
+  background-color: rgba(126, 125, 125, 0.2);
+  padding: 30px;
+  margin-right: 5px;
+  font-size: 1.2rem; /* Base font size for better readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 100%; /* Ensure full height */
+}
+
+.design-left p {
+  margin-bottom: 15px; /* Increase margin for better spacing */
+  color: var(--text-color); /* Adjust text color for contrast */
+}
+
+.design-title {
+  line-height: 1.3; /* Slightly increased line height for readability */
+  margin-bottom: 25px; /* Increase space below the title */
+  font-weight: bold; /* Emphasize the title */
+  color: var(--text-color); /* Darker color for emphasis */
+}
+
+.design-subtitle {
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 25px; /* Increase space below the subtitle */
+  color: var(--text-color); /* Softer color for the subtitle */
+}
+
+.card {
+  margin-bottom: 1rem;
+  min-height: 450px;
+}
+
+.about-section-mission{
+  line-height: 30px;
+  /* text-align: justify; */
+}
+
+.contact-details p {
+  line-height: 1.2rem;
+}
+
+.contact-details i {
+  color: var(--second-color);
+}
+.learn-more-btn {
+  background-color: #e7af41;
+  color: white;
+}
+.learn-more-btn:hover {
+  background-color: #e7af41;
+  color: white;
+}
+
+.contact-us-btn {
+  outline: 2px solid var(--second-color);
+  color:var(--text-color);
+}
+
+.innovate-section-two{
+  background-color: rgba(126, 125, 125, 0.2);
+ 
+}
+
+.hero-section {
+  overflow: hidden;
+}
+
+.hero-section h2,
+.hero-section p,
+.hero-section button,
+.hero-section img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-section.loaded h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero-section.loaded p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.hero-section.loaded button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.hero-section.loaded img {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* section-transitions.css */
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  text-align: center; /* Ensure the text stays centered */
+  width: 100%; /* Take up the full width of the container */
+}
+
+.animate-section h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #f1d68f;
+  transition: width 0.5s ease;
+}
+
+.animate-section.visible h1::after {
+  width: 100%;
+  transition-delay: 0.5s;
+}
+
+.animate-section p:first-child {
+  font-size: 1.2rem;
+  color: #f1d68f;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.animate-section p:last-child {
+  font-size: 1rem;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+
+.dark-text {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.7rem;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .animate-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* card-animations.css */
+.animated-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animated-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.animated-card i {
+  transition: transform 0.3s ease;
+}
+
+.animated-card:hover i {
+  transform: scale(1.1);
+}
+
+/* Staggered animation delays */
+.animated-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.animated-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.animated-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.animated-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.animated-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+/* Add more nth-child rules if you have more cards */
+
+@media (max-width: 768px) {
+  .animated-card {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.small-text{
+  color: var(--second-color);
+}
+
+/* Add this to your existing CSS file or create a new one */
+/* General animation classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Design section specific classes */
+.design-content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.design-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-image {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.design-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Button animation */
+.animate-button {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.animate-button.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Staggered animation delays */
+.stagger-delay-1 { transition-delay: 0.1s; }
+.stagger-delay-2 { transition-delay: 0.2s; }
+.stagger-delay-3 { transition-delay: 0.3s; }
+.stagger-delay-4 { transition-delay: 0.4s; }
+.stagger-delay-5 { transition-delay: 0.5s; }
+
+
+
+.fade-in-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-slide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rotate and fade-in effect */
+.rotate-fade-in {
+  opacity: 0;
+  transform: rotate(-10deg);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.rotate-fade-in.visible {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+/* Scale up with fade-in effect */
+.scale-up {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scale-up.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hover-up {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.hover-up:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Initial state for the section (hidden and translated down) */
+.faq-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animation state (when the section is in view) */
+.faq-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* New Class for Animation */
+.empower-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.empower-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

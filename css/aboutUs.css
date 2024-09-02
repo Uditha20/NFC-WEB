@@ -1,0 +1,161 @@
+/* Define CSS variables */
+:root {
+  --main-color: #000315;
+  --text-color: #ffffff;
+  --second-color: #e7af41;
+  }
+  
+  body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: var(--main-color);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    border-radius: 5px;
+  }
+  
+  .nav-link,
+  .nav-link:hover {
+    color: var(--text-color);
+    z-index: 2;
+    padding: 8px 15px;
+  
+  
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  
+  .btn-outline-light {
+    border-radius: 0;
+  }
+
+  .btn-light {
+    border-radius: 0;
+  }
+  
+  .navbar-brand img {
+    max-height: 50px;
+    padding: 5px;
+    vertical-align: middle;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+  }
+  
+  .container-fluid {
+    padding: 0 15px;
+  }
+  
+  
+  .hero-section {
+      background: linear-gradient(to right, var(--main-color), #1b1e34); 
+      padding: 35px;
+      color: var(--text-color);
+      height: auto;
+  }
+  
+  .hero-section h2{
+      font-size: 2.5rem; 
+      font-weight: 700;
+      letter-spacing: 2px;
+      line-height: 50px;
+  }
+  
+  .hero-section .highlight {
+      color: var(--highlight-color);
+  }
+  
+  .hero-section p {
+      font-size: 1.2rem; 
+      margin-bottom: 20px;
+  }
+  
+  .hero-section .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+  
+  .hero-section .btn-light {
+      margin-right: 10px;
+  }
+  
+  .hero-section img {
+      max-width: 100%;
+      height: auto;
+  }
+  @keyframes upAndDown {
+      0%, 100% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-10px);
+      }
+  }
+  
+  .hero-section img {
+      animation: upAndDown 3s ease-in-out infinite;
+  }
+  
+  .box{
+      height: 200px;
+      width: 200px;
+  }
+  .about-section-mission{
+    line-height: 30px;
+    /* text-align: justify; */
+  }
+  .about-us-card{
+  
+  text-align: center;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  
+  }
+
+  .about-us-text {
+    text-align: center;
+  }
+  
+  .faq-paragraph {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .about-us-card i{
+    font-size: 1.5rem;
+  }
+
+
+  /* new common */
+  .contact-us-btn {
+    outline: 2px solid var(--second-color);
+    color:var(--text-color);
+  }
+
+  .learn-more-btn {
+    background-color: #e7af41;
+    color: white;
+  }
