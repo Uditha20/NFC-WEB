@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>details3 page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- style sheet -->
-    <link rel="stylesheet" href="./css/details3.css" />
-  </head>
-  <body>
+<?php
+include "./include/header.php"
+?>
+
     <!-- nav bar -->
     <div class="container-fluid mt-3">
       <nav class="navbar navbar-expand-lg">
@@ -51,7 +23,7 @@
             /></a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About us</a>
+                <a class="nav-link" aria-current="page" href="">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Products</a>
@@ -85,7 +57,7 @@
     <div class="container-fluid mt-4">
       <div class="row d-flex justify-content-center">
         <div class="col-md-7">
-          <h1 style="text-align: center">Elite Smart Card</h1>
+          <h1 style="text-align: center">Deluxe Smart Card</h1>
           <p style="text-align: center; line-height: 28px">
             Experience the power of our Deluxe Smart NFC Card
           </p>
@@ -108,7 +80,7 @@
             style="flex-direction: column"
           >
             <h6>Customize</h6>
-            <h2>Design Your Own Elite Smart Card</h2>
+            <h2>EDesign Your Own Prime Smart Card</h2>
             <div class="row"></div>
           </div>
           <div
@@ -173,13 +145,32 @@
             class="col-md-6 p-5 d-flex justify-content-center"
             style="flex-direction: column"
           >
-            <i class="bi bi-box"></i>
-            <h2>Premium Materials and Exquisite Finish</h2>
+            <h6>Sleek</h6>
+            <h2>Elegant Design for Your Smart NFC Card</h2>
             <h6>
-              Experience the luxury of our Elite Smart Card, crafted with
-              premium materials and finished to perfection. Stand out from the
-              crowd with a card that exudes elegance and sophistication.
+              The Deluxe Smart NFC Card features a sophisticated black and white
+              print design that exudes professionalism and style. With its sleek
+              appearance, this card is perfect for smart professionals and
+              individuals who want to make a lasting impression.
             </h6>
+            <div class="row">
+              <div class="col d-flex">
+                <i class="bi bi-box"></i>
+                <h6>High-quality black and white print design</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex">
+                <i class="bi bi-box"></i>
+                <h6>Durable and long-lasting NFC technology</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex">
+                <i class="bi bi-box"></i>
+                <h6>Environmentally sustainable and cost-effective</h6>
+              </div>
+            </div>
             <div class="d-flex align-items-center">
               <button
                 type="button"
@@ -211,35 +202,31 @@
             class="col-md-6 p-5 d-flex justify-content-center"
             style="flex-direction: column"
           >
-            <h6>Customizable</h6>
-            <h2>Endless Design Possibilities for Your Elite Smart Card</h2>
+            <h6>Smart</h6>
+            <h2>Experience the Power of Smart NFC Cards</h2>
             <h6>
-              With our Elite Smart Card, you have the freedom to fully customize
-              the print options to create a card that truly represents your
-              brand and personality. From choosing the color scheme to adding
-              your logo and contact details, the possibilities are endless.
+              Our deluxe smart card is designed to revolutionize the way you
+              share contact information. With its smart NFC technology, it
+              allows you to effortlessly exchange your details with others,
+              making networking easier and more efficient. Not only is it
+              convenient, but it's also environmentally sustainable and
+              cost-effective, making it the perfect choice for smart
+              professionals and smart youth.
             </h6>
             <div class="row">
               <div class="col-md-6">
                 <h2>50%</h2>
-                <h6>Choose Your Color Scheme</h6>
+                <h6>
+                  Effortlessly share contact information with smart technology
+                </h6>
               </div>
               <div class="col-md-6">
                 <h2>50%</h2>
-                <h6>Add Your Logo and Contact Details</h6>
+                <h6>
+                  Environmentally sustainable and cost-effective solution for
+                  networking
+                </h6>
               </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <button
-                type="button"
-                class="btn btn-outline-light justify-content-le pt-2 px-2 mt-3"
-              >
-                Learn More
-              </button>
-              <p class="px-2" style="margin-top: 30px">
-                Get Started
-                <i class="bi bi-caret-right"></i>
-              </p>
             </div>
           </div>
           <div class="col-md-6 p-5">
@@ -261,27 +248,28 @@
             style="flex-direction: column"
           >
             <h2>
-              Experience the Power of NFC Technology with the Elite Smart Card
+              Customize Your Deluxe Smart NFC Card with Our Online Design
+              Feature
             </h2>
             <h6>
-              The Elite Smart Card combines cutting-edge NFC technology with
-              advanced features, providing a premium and customizable digital
-              solution.
+              Easily personalize your Deluxe Smart NFC Card by using our
+              intuitive online design tool. Stand out from the crowd with a card
+              that reflects your unique style and personality.
             </h6>
 
             <div class="row">
               <div class="col-md-6">
-                <h5>Premium Quality</h5>
+                <h5>Easy Design</h5>
                 <h6>
-                  Crafted with precision, the Elite Smart Card offers a sleek
-                  design and superior functionality.
+                  Choose from a wide range of templates, colors, fonts, and
+                  layouts to create your perfect card.
                 </h6>
               </div>
               <div class="col-md-6">
-                <h5>Customizable Options</h5>
+                <h5>Fast Delivery</h5>
                 <h6>
-                  Personalize your Elite Smart Card with unique branding and
-                  tailored features to make a lasting impression.
+                  Once you've designed your card, we'll quickly print and
+                  deliver it to your doorstep.
                 </h6>
               </div>
             </div>
@@ -297,79 +285,18 @@
       </div>
     </div>
     <!-- details 7th section -->
-    <div>
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div
-            class="col-md-6 p-5 d-flex justify-content-center"
-            style="flex-direction: column"
-          >
-            <h6>Smart</h6>
-            <h2>Experience the Power of Manjithaaza Smart NFC Cards</h2>
-            <h6>
-              Our Prime Smart NFC Cards are designed to revolutionize the way
-              you share your contact information. With cutting-edge technology
-              and a sleek design, our cards make networking effortless and
-              efficient.
-            </h6>
-            <div class="row">
-              <div class="col-md-6">
-                <h5>Effortless</h5>
-                <h6>
-                  Share your contact information with just a tap, saving time
-                  and making connections seamlessly.
-                </h6>
-              </div>
-              <div class="col-md-6">
-                <h5>Efficient</h5>
-                <h6>
-                  Stay organized and never worry about running out of business
-                  cards again.
-                </h6>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <button
-                type="button"
-                class="btn btn-outline-light justify-content-le pt-2 px-2 mt-3"
-              >
-                Learn More
-              </button>
-              <p class="px-2" style="margin-top: 30px">
-                Get Started
-                <i class="bi bi-caret-right"></i>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 p-5">
-            <img
-              src="./asset/img/about_pic1.png"
-              class="img-fluid"
-              alt="Hero Section Image"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- details 7th section -->
-    <div>
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div class="col-md-6 p-5">
-            <h2>Design Your Elite Smart Card</h2>
-          </div>
-          <div class="col-md-6 p-5">
-            <h6>
-              Create a unique and professional smart card design that represents
-              your brand or personal style. Stand out from the crowd with our
-              fully customizable Elite Smart Card.
-            </h6>
-            <div style="line-height: 28px">
-              <button type="button" class="btn btn-light me-2">Start</button>
-              <button type="button" class="btn btn-outline-light">
-                Purchase
-              </button>
-            </div>
+    <div class="container-fluid mt-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-7">
+          <h1 style="text-align: center">Design Your Deluxe Smart Card</h1>
+          <p style="text-align: center; line-height: 28px">
+            Create a personalized Deluxe Smart NFC Card that stands out.
+          </p>
+          <div style="text-align: center; line-height: 28px">
+            <button type="button" class="btn btn-light me-2">Design</button>
+            <button type="button" class="btn btn-outline-light">
+              Purchase
+            </button>
           </div>
         </div>
       </div>
