@@ -237,7 +237,7 @@ include "./include/header.php"
     </div>
   </div>
 </div>
-<!-- products 6th section -->
+
 <div>
   <div class="container-fluid mt-3">
     <div class="row">
@@ -275,17 +275,7 @@ include "./include/header.php"
             </h6>
           </div>
         </div>
-        <div class="d-flex align-items-center">
-          <button
-            type="button"
-            class="btn contact-us-btn justify-content-le pt-2 px-2 mt-3">
-            Learn More
-          </button>
-          <p class="px-2" style="margin-top: 30px">
-            Get Started
-            <i class="bi bi-caret-right"></i>
-          </p>
-        </div>
+       
       </div>
       <div class="col-md-6 p-5">
         <img
@@ -296,18 +286,20 @@ include "./include/header.php"
     </div>
   </div>
 </div>
+<!-- products 6th section -->
+
 <!-- products 7th section -->
 <div>
   <div class="container-fluid mt-3">
     <div class="row">
       <div
-        class="col-md-6 p-5 d-flex justify-content-center"
+        class="col-md-6 p-5 d-flex justify-content-center  "
         style="flex-direction: column">
-        <h2>
+        <h2 class="design-text">
           Highlighting the Environmental Sustainability of Our Smart NFC
           Cards
         </h2>
-        <h6>
+        <h6 class="dark-text design-text ">
           Our smart NFC cards are not only technologically advanced but also
           environmentally friendly. By using our cards, you can reduce paper
           waste and contribute to a greener future.
@@ -316,7 +308,7 @@ include "./include/header.php"
       <div class="col-md-6 p-5">
         <img
           src="./asset/img/about_pic1.png"
-          class="img-fluid"
+          class="img-fluid design-image"
           alt="Hero Section Image" />
       </div>
     </div>
@@ -327,16 +319,16 @@ include "./include/header.php"
   <div class="container-fluid mt-3">
     <div class="row">
       <div
-        class="col-md-6 p-5 d-flex justify-content-center"
+        class="col-md-6 p-5 d-flex justify-content-center "
         style="flex-direction: column">
-        <h6>Affordable</h6>
-        <h2>Cost-Effective Smart NFC Cards for Every Need</h2>
-        <h6>
+        <h6 class="small-text">Affordable</h6>
+        <h2 class="fade-in-slide">Cost-Effective Smart NFC Cards for Every Need</h2>
+        <h6 class="fade-in-slide">
           Our smart NFC cards offer a cost-effective solution for
           professionals and individuals who want to easily share their
           contact information.
         </h6>
-        <div class="row">
+        <div class="row fade-in-slide">
           <div class="col-md-6">
             <h5>Efficient Solution</h5>
             <h6>
@@ -355,10 +347,10 @@ include "./include/header.php"
         <div class="d-flex align-items-center">
           <button
             type="button"
-            class="btn btn-outline-light justify-content-le pt-2 px-2 mt-3">
+            class="btn btn-outline-light scale-up justify-content-le pt-2 px-2 mt-3">
             Learn More
           </button>
-          <p class="px-2" style="margin-top: 30px">
+          <p class="px-2 scale-up" style="margin-top: 30px">
             Get Started
             <i class="bi bi-caret-right"></i>
           </p>
@@ -386,7 +378,7 @@ include "./include/header.php"
 </div>
 <!-- products 10th section -->
 <div class="container">
-  <div class="row">
+  <div class="row animated-card ">
     <div class="col-md-4">
       <img
         src="./asset/img/about_pic1.png"
@@ -419,8 +411,8 @@ include "./include/header.php"
         </p>
       </div>
       <div class="col-md-6 d-flex justify-content-end">
-        <button type="button" class="btn btn-light me-2">Learn More</button>
-        <button type="button" class="btn btn-outline-light">Log In</button>
+        <button type="button" class="btn learn-more-btn me-2">Learn More</button>
+        <button type="button" class="btn contact-us-btn">Log In</button>
       </div>
     </div>
   </div>

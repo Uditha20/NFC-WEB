@@ -7,7 +7,7 @@ include "./include/header.php"
         <div class="row hero-section align-items-center">
           <div class="col-md-6" style="padding-left: 20px">
             <h6>Empowering</h6>
-            <h2>Smart Solutions for</h2>
+            <h2> <span class="small-text">Smart</span> Solutions for</h2>
             <p>
               Stay connected, organized, and productive with our cutting-edge
               smart technology.
@@ -92,115 +92,135 @@ include "./include/header.php"
     </div>
     <!-- service 5th section -->
     <div>
-      <div class="container-fluid mt-3">
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div
+        class="col-md-6 p-5 d-flex justify-content-center "
+        style="flex-direction: column">
+        <h2 style="line-height: 2.7rem " class="design-text">
+          Empowering Professionals and <br />
+          Youth with Smart NFC Cards
+        </h2>
+        <h6 class="dark-text">
+          At Manjithaaza, we specialize in providing smart NFC cards that
+          revolutionize the way professionals and youth share contact
+          information. Our cards are designed to be easy to use,
+          environmentally sustainable, and cost-effective.
+        </h6>
+
         <div class="row">
-          <div
-            class="col-md-6 p-5 d-flex justify-content-center"
-            style="flex-direction: column"
-          >
-            <h6>Innovate</h6>
-            <h2>Branding Solutions that Make Your Business Stand Out</h2>
+          <div class="animated-card about-us-card col-md-5 p-5 mx-2">
+            <i class="bi bi-box"></i>
+            <h2>Effortless Communication Made Simple</h2>
             <h6>
-              Our branding solutions are designed to help your business create a
-              strong and memorable brand identity. From logo design to brand
-              strategy and marketing materials, we have you covered.
+              Our smart NFC cards enable seamless sharing of contact
+              information, eliminating the need for traditional business
+              cards.
             </h6>
-            <div class="row">
-              <div class="col-md-6">
-                <h5>Logo Design</h5>
-                <h6>
-                  Our expert designers will create a unique and professional
-                  logo that represents your brand.
-                </h6>
-              </div>
-              <div class="col-md-6">
-                <h5>Brand Strategy</h5>
-                <h6>
-                  We'll develop a comprehensive brand strategy to position your
-                  business for success.
-                </h6>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <button
-                type="button"
-                class="btn btn-outline-light justify-content-le pt-2 px-2 mt-3"
-              >
-                Learn More
-              </button>
-              <p class="px-2" style="margin-top: 30px">
-                Get Started
-                <i class="bi bi-caret-right"></i>
-              </p>
-            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img
-              src="./asset/img/about_pic1.png"
-              class="img-fluid"
-              alt="Hero Section Image"
-            />
+          <div class="animated-card about-us-card col-md-5 p-5">
+            <i class="bi bi-box"></i>
+            <h2>Effortless Communication Made Simple</h2>
+            <h6>
+              Our smart NFC cards enable seamless sharing of contact
+              information, eliminating the need for traditional business
+              cards.
+            </h6>
           </div>
         </div>
+        <div class="d-flex align-items-center">
+          <button
+            type="button"
+            class="btn contact-us-btn justify-content-le pt-2 px-2 mt-3">
+            Learn More
+          </button>
+          <p class="px-2" style="margin-top: 30px">
+            Get Started
+            <i class="bi bi-caret-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 p-5">
+        <img
+          src="./asset/img/about_pic1.png"
+          class="img-fluid design-image"
+          alt="Hero Section Image" />
       </div>
     </div>
+  </div>
+</div>
     <!-- service 6th section -->
     <div>
-      <div class="container-fluid mt-3">
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div
+        class="col-md-6 p-5 d-flex justify-content-center "
+        style="flex-direction: column">
+        <h2 style="line-height: 2.7rem " class="design-text">
+          Empowering Professionals and <br />
+          Youth with Smart NFC Cards
+        </h2>
+        <h6 class="dark-text">
+          At Manjithaaza, we specialize in providing smart NFC cards that
+          revolutionize the way professionals and youth share contact
+          information. Our cards are designed to be easy to use,
+          environmentally sustainable, and cost-effective.
+        </h6>
+
         <div class="row">
-          <div
-            class="col-md-6 p-5 d-flex justify-content-center"
-            style="flex-direction: column"
-          >
-            <h2>
-              Empowering Businesses with Cutting-Edge IT Solutions for Success
-            </h2>
+          <div class="animated-card about-us-card col-md-5 p-5 mx-2">
+            <i class="bi bi-box"></i>
+            <h2>Effortless Communication Made Simple</h2>
             <h6>
-              At Manjithaaza, we offer a comprehensive range of IT solutions
-              including software development, network setup, and cybersecurity.
-              Our team of experts is dedicated to providing innovative and
-              reliable solutions that help businesses thrive in the digital age.
+              Our smart NFC cards enable seamless sharing of contact
+              information, eliminating the need for traditional business
+              cards.
             </h6>
-            <div class="row">
-              <div class="col-md-6">
-                <h5>Software Development</h5>
-                <h6>
-                  Customized software solutions tailored to meet your unique
-                  business needs and goals.
-                </h6>
-              </div>
-              <div class="col-md-6">
-                <h5>Network Setup</h5>
-                <h6>
-                  Efficient and secure network setup to ensure seamless
-                  connectivity and data protection.
-                </h6>
-              </div>
-            </div>
           </div>
-          <div class="col-md-6 p-5">
-            <img
-              src="./asset/img/about_pic1.png"
-              class="img-fluid"
-              alt="Hero Section Image"
-            />
+          <div class="animated-card about-us-card col-md-5 p-5">
+            <i class="bi bi-box"></i>
+            <h2>Effortless Communication Made Simple</h2>
+            <h6>
+              Our smart NFC cards enable seamless sharing of contact
+              information, eliminating the need for traditional business
+              cards.
+            </h6>
           </div>
         </div>
+        <div class="d-flex align-items-center">
+          <button
+            type="button"
+            class="btn contact-us-btn justify-content-le pt-2 px-2 mt-3">
+            Learn More
+          </button>
+          <p class="px-2" style="margin-top: 30px">
+            Get Started
+            <i class="bi bi-caret-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 p-5">
+        <img
+          src="./asset/img/about_pic1.png"
+          class="img-fluid design-image"
+          alt="Hero Section Image" />
       </div>
     </div>
+  </div>
+</div>
     <!-- service 7th section -->
     <div>
       <div class="container-fluid mt-3">
         <div class="row">
           <div
-            class="col-md-6 p-5 d-flex justify-content-center"
+            class="col-md-6 p-5 d-flex justify-content-center "
             style="flex-direction: column"
           >
-            <h2>
+            <h2 class="fade-in-up">
               Enhance your brand with our high-quality printing solutions for
               business cards, brochures, and promotional materials.
             </h2>
-            <h6>
+            <h6 class="dark-text">
               Our printing solutions offer professional designs and fast
               turnaround times, ensuring your materials leave a lasting
               impression.
@@ -209,7 +229,7 @@ include "./include/header.php"
           <div class="col-md-6 p-5">
             <img
               src="./asset/img/about_pic1.png"
-              class="img-fluid"
+              class="img-fluid design-image"
               alt="Hero Section Image"
             />
           </div>
@@ -224,15 +244,15 @@ include "./include/header.php"
             class="col-md-6 p-5 d-flex justify-content-center"
             style="flex-direction: column"
           >
-            <h2>Get a Custom Quote Today</h2>
-            <h6>
+            <h2 class="fade-in-up"">Get a Custom Quote Today</h2>
+            <h6 class="fade-in-up">
               Contact us to discuss your specific needs and receive a
               personalized quote.
             </h6>
             <div class="d-flex align-items-center">
               <button
                 type="button"
-                class="btn btn-outline-light justify-content-le pt-2 px-2 mt-3"
+                class="btn learn-more-btn justify-content-le pt-2 px-2 mt-3"
               >
                 Contact
               </button>
@@ -245,7 +265,7 @@ include "./include/header.php"
           <div class="col-md-6 p-5">
             <img
               src="./asset/img/about_pic1.png"
-              class="img-fluid"
+              class="img-fluid design-image"
               alt="Hero Section Image"
             />
           </div>
@@ -257,7 +277,7 @@ include "./include/header.php"
       <div class="container-fluid mt-3">
         <div class="row hero-section align-items-center">
           <div class="col-md-6" style="padding-left: 20px">
-            <h2>Satisfied Customers</h2>
+            <h2 class="small-text">Satisfied Customers</h2>
             <h6>Hear what our clients have to say about our services</h6>
           </div>
         </div>

@@ -24,13 +24,13 @@ include "./include/header.php"
       <div class="container-fluid mt-3">
         <div class="row" style="padding: 30px">
           <div class="col-md-12 d-flex justify-content-center">
-            <img src="./asset/img/big.png" class="img-fluid w-100"    style="height: auto; max-height: 550px"/>
+            <img src="./asset/img/big.png" class="img-fluid w-100 design-image"    style="height: auto; max-height: 550px"/>
           </div>
         </div>
       </div>
 
       <div class="container-fluid mt-4">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center animate-section">
           <div class="col-md-5">
          
             <h2 style="text-align: center">
@@ -46,7 +46,7 @@ include "./include/header.php"
         </div>
       </div>
       <div class="container-fluid mt-4">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center animate-section">
           <div class="col-md-5">
          
             <h3 style="text-align: center">
@@ -66,7 +66,7 @@ include "./include/header.php"
           <div class="col-md-5">
             <img
             src="./asset/img/about_pic1.png"
-            class="img-fluid"
+            class="img- design-image"
             alt="Hero Section Image"
             style="max-width: 100%; height: auto; max-height: 450px; width: 100%"
           />
@@ -157,7 +157,7 @@ include "./include/header.php"
       <div class="container-fluid">
         <div class="row mt-5 mb-2">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3"  style="padding-left: 20px">
-            <div class="card" style="width: 100%">
+            <div class="card scale-up" style="width: 100%">
               <img
                 src="./asset/img/card.png"
                 class="card-img-top"
@@ -179,7 +179,7 @@ include "./include/header.php"
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="width: 100%">
+            <div class="card  scale-up" style="width: 100%">
               <img
                 src="./asset/img/card.png"
                 class="card-img-top"
@@ -201,7 +201,7 @@ include "./include/header.php"
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="width: 100%">
+            <div class="card  scale-up" style="width: 100%">
               <img
                 src="./asset/img/card.png"
                 class="card-img-top"
@@ -223,7 +223,7 @@ include "./include/header.php"
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="width: 100%">
+            <div class="card  scale-up" style="width: 100%">
               <img
                 src="./asset/img/card.png"
                 class="card-img-top"
