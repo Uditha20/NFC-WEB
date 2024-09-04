@@ -62,11 +62,11 @@
     <!-- aboutus-3rd-section -->
     <div>
       <div class="container-fluid mt-3">
-        <div class="row">
+        <div class="row ">
           <div
-            class="col-md-6 p-5 d-flex justify-content-center"
+            class="col-md-6 p-5 d-flex justify-content-center "
             style="flex-direction: column">
-            <h2 style="line-height: 2.7rem">
+            <h2 style="line-height: 2.7rem " class="design-text">
               Empowering Professionals and <br />
               Youth with Smart NFC Cards
             </h2>
@@ -101,7 +101,7 @@
           <div class="col-md-6 p-5">
             <img
               src="./asset/img/about_pic1.png"
-              class="img-fluid"
+              class="img-fluid design-image"
               alt="Hero Section Image" />
           </div>
         </div>
@@ -129,7 +129,7 @@
     <div class="container-fluid mt-3">
       <div class="row d-flex justify-content-center">
         <div class="col-md-9">
-          <h6 style="text-align: center" class="dark-text">
+          <h6 style="text-align: center" class="dark-text design-text">
             At Manjithaaza, we specialize in providing smart digital accessories
             and digital services. Our focus is on creating and providing smart
             NFC cards that allow professionals and youth to communicate their
@@ -144,7 +144,7 @@
     <!-- aboutus-5th-section -->
     <div class="container-fluid mt-3">
       <div class="row d-flex justify-content-around">
-        <div class="about-us-card col-md-3 p-5">
+        <div class="about-us-card col-md-3 p-5 scale-up">
           <i class="bi bi-box"></i>
           <h4>Smart Digital Accessories for Enhanced Connectivity</h4>
           <h6>
@@ -152,7 +152,7 @@
             communication.
           </h6>
         </div>
-        <div class="about-us-card col-md-3 p-5">
+        <div class="about-us-card col-md-3 p-5 scale-up">
           <i class="bi bi-box"></i>
           <h4>Digital Services for Streamlined Operations</h4>
           <h6>
@@ -160,7 +160,7 @@
             productivity.
           </h6>
         </div>
-        <div class="about-us-card col-md-3 p-5">
+        <div class="about-us-card col-md-3 p-5 scale-up">
           <i class="bi bi-box"></i>
           <h4>Environmentally Sustainable Solutions for a Greener Future</h4>
           <h6>
@@ -185,39 +185,45 @@
 
     <!-- aboutus-7th-section -->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row ">
         <div class="col-md-6 p-5 d-flex flex-column align-items-center">
           <img
             src="./asset/img/about_pic1.png"
-            class="img-fluid"
+            class="img-fluid  design-image"
             alt="Hero Section Image" />
-          <h6 class="about-us-text mt-3">John Doe</h6>
-          <h6 class="about-us-text">CEO</h6>
-          <h6 class="about-us-text">
-            John is a visionary leader with a passion for driving innovation and
-            growth.
-          </h6>
-          <div class="about-us-text">
-            <i class="bi bi-linkedin mx-4"></i>
-            <i class="bi bi-twitter-x mx-4"></i>
-            <i class="bi bi-dribbble mx-4"></i>
-          </div>
+            <div class="design-text">
+
+              <h6 class="about-us-text mt-3">John Doe</h6>
+              <h6 class="about-us-text">CEO</h6>
+              <h6 class="about-us-text">
+                John is a visionary leader with a passion for driving innovation and
+                growth.
+              </h6>
+              <div class="about-us-text">
+                <i class="bi bi-linkedin mx-4"></i>
+                <i class="bi bi-twitter-x mx-4"></i>
+                <i class="bi bi-dribbble mx-4"></i>
+              </div>
+            </div>
         </div>
         <div class="col-md-6 p-5 d-flex flex-column align-items-center">
           <img
             src="./asset/img/about_pic1.png"
-            class="img-fluid"
+            class="img-fluid design-image"
             alt="Hero Section Image" />
-          <h6 style="text-align: center" class="mt-3">Jane Smith</h6>
-          <h6 style="text-align: center">CTO</h6>
-          <h6 style="text-align: center">
-            Jane is a technology expert who oversees our product development and
-            technical operations.
-          </h6>
-          <div style="text-align: center">
-            <i class="bi bi-linkedin mx-4"></i>
-            <i class="bi bi-twitter-x mx-4"></i>
-            <i class="bi bi-dribbble mx-4"></i>
+          <div class="design-text">
+
+            <h6 style="text-align: center" class="mt-3">Jane Smith</h6>
+            <h6 style="text-align: center">CTO</h6>
+            <h6 style="text-align: center">
+              Jane is a technology expert who oversees our product development and
+              technical operations.
+            </h6>
+            <div style="text-align: center">
+              <i class="bi bi-linkedin mx-4"></i>
+              <i class="bi bi-twitter-x mx-4"></i>
+              <i class="bi bi-dribbble mx-4"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -226,35 +232,42 @@
       <div class="col-md-6 p-5 d-flex flex-column align-items-center">
         <img
           src="./asset/img/about_pic1.png"
-          class="img-fluid"
+          class="img-fluid design-image"
           alt="Hero Section Image" />
-        <h6 style="text-align: center" class="mt-3">David Johnson</h6>
-        <h6 style="text-align: center">Marketing Manager</h6>
-        <h6 style="text-align: center">
-          David is a creative marketer who leads our brand strategy and customer
-          acquisition efforts.
-        </h6>
-        <div style="text-align: center">
-          <i class="bi bi-linkedin mx-4"></i>
-          <i class="bi bi-twitter-x mx-4"></i>
-          <i class="bi bi-dribbble mx-4"></i>
+        <div class="design-text">
+
+
+          <h6 style="text-align: center" class="mt-3">David Johnson</h6>
+          <h6 style="text-align: center">Marketing Manager</h6>
+          <h6 style="text-align: center">
+            David is a creative marketer who leads our brand strategy and customer
+            acquisition efforts.
+          </h6>
+          <div style="text-align: center">
+            <i class="bi bi-linkedin mx-4"></i>
+            <i class="bi bi-twitter-x mx-4"></i>
+            <i class="bi bi-dribbble mx-4"></i>
+          </div>
         </div>
       </div>
       <div class="col-md-6 p-5 d-flex flex-column align-items-center">
         <img
           src="./asset/img/about_pic1.png"
-          class="img-fluid"
+          class="img-fluid design-image"
           alt="Hero Section Image" />
-        <h6 style="text-align: center" class="mt-3">Sarah Williams</h6>
-        <h6 style="text-align: center">Finance Director</h6>
-        <h6 style="text-align: center">
-          Sarah is a financial expert who ensures the stability and growth of
-          our company.
-        </h6>
-        <div style="text-align: center">
-          <i class="bi bi-linkedin mx-4"></i>
-          <i class="bi bi-twitter-x mx-4"></i>
-          <i class="bi bi-dribbble mx-4"></i>
+        <div class="design-text">
+
+          <h6 style="text-align: center" class="mt-3">Sarah Williams</h6>
+          <h6 style="text-align: center">Finance Director</h6>
+          <h6 style="text-align: center">
+            Sarah is a financial expert who ensures the stability and growth of
+            our company.
+          </h6>
+          <div style="text-align: center">
+            <i class="bi bi-linkedin mx-4"></i>
+            <i class="bi bi-twitter-x mx-4"></i>
+            <i class="bi bi-dribbble mx-4"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -298,7 +311,7 @@
           <div class="col-md-5 p-5">
             <img
               src="./asset/img/about_pic1.png"
-              class="img-fluid"
+              class="img-fluid design-image"
               alt="Hero Section Image" />
           </div>
         </div>
@@ -369,20 +382,20 @@
     <div>
       <div class="container-fluid mt-3">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-6 p-5">
-            <h1>Empower Your Digital <br />Journey Today</h1>
-            <p class="faq-paragraph dark-text">
+          <div class="col-6 p-5 ">
+            <h1 class="design-text">Empower Your Digital <br />Journey Today</h1>
+            <p class="faq-paragraph dark-text design-text">
               Contact us for more information or to inquire about our services.
             </p>
-            <button type="button" class="btn learn-more-btn me-2">
+            <button type="button" class="btn learn-more-btn me-2 animate-button">
               Learn More
             </button>
-            <button type="button" class="btn contact-us-btn">Log In</button>
+            <button type="button" class="btn contact-us-btn animate-button">Log In</button>
           </div>
           <div class="col-6 p-5">
             <img
               src="./asset/img/about_pic1.png"
-              class="img-fluid"
+              class="img-fluid design-image"
               alt="Hero Section Image" />
           </div>
         </div>
@@ -390,7 +403,7 @@
     </div>
 
     <?php
-  
-  
-  include "./include/footer.php"
-  ?>
+
+
+    include "./include/footer.php"
+    ?>

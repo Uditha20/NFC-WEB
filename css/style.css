@@ -590,3 +590,13 @@ h1 {
 }
 
 
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #cccccc; /* Optional: change color on hover */
+  text-decoration: underline; /* Optional: add underline on hover */
+}

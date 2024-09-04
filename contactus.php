@@ -2,51 +2,7 @@
 include "./include/header.php"
 ?>
 
-    <div class="container-fluid mt-3">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"
-              ><img src="./asset/img/navlogo.png" alt=""
-            /></a>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light">Learn</button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-outline-light">
-                  Log In
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
+  
     <div class="container-fluid mt-3">
       <div class="row hero-section align-items-center">
         <div class="col-md-6" style="padding-left: 20px">
@@ -202,34 +158,7 @@ include "./include/header.php"
       </div>
     </div>
 
-    <div class="container-fluid" style="margin-top: 40px;">
-      <div class="row d-flex justify-content-center">
-        <div style="text-align: center">
-          <img src="./asset/img/navlogo.png" class="img-fluid" alt="nav imag" />
-        </div>
-      </div>
-    </div>
+<?php
+include "./include/footer.php"
 
-    <div class="container-fluid mt-3">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-7">
-          <div class="footer row mt-3 text-center text-md-start">
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">About Us</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Product</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Service</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">Contact</div>
-            <div class="col-12 col-md footer-item mb-2 mb-md-0">FAQ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr
-      style="
-        height: 2px;
-        border-width: 0;
-        color: white;
-        background-color: white;
-      "
-    />
-  </body>
-</html>
+?>
