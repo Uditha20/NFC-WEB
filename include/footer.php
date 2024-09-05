@@ -14,22 +14,25 @@
     <div class="col-md-7">
       <div class="footer row mt-3 text-center text-md-start">
         <div class="col-12 col-md footer-item mb-2 mb-md-0">
-          <a href="./aboutUs.php" class="footer-link">About Us</a>
+          <a href="./aboutUs.php" class="footer-link-custom">About Us</a>
         </div>
         <div class="col-12 col-md footer-item mb-2 mb-md-0">
-          <a href="./products.php" class="footer-link">Product</a>
+          <a href="./products.php" class="footer-link-custom">Product</a>
         </div>
         <div class="col-12 col-md footer-item mb-2 mb-md-0">
-          <a href="./service.php" class="footer-link">Service</a>
+          <a href="./service.php" class="footer-link-custom">Service</a>
         </div>
         <div class="col-12 col-md footer-item mb-2 mb-md-0">
-          <a href="./contactus.php" class="footer-link">Contact</a>
+          <a href="./contactus.php" class="footer-link-custom">Contact</a>
         </div>
         <div class="col-12 col-md footer-item mb-2 mb-md-0">
-          <a href="./contactus.php" class="footer-link">FAQ</a>
+          <a href="./contactus.php" class="footer-link-custom">FAQ</a>
         </div>
       </div>
+    </div>
   </div>
+</div>
+
 
 </div>
 </div>

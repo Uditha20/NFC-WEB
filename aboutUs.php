@@ -5,7 +5,7 @@
     <div class="container-fluid mt-3">
       <div class="row hero-section align-items-center">
         <div class="col-md-6" style="padding-left: 20px">
-          <h2>Empowering Smart <br />Connections<br /></h2>
+          <h2><span class="small-text">Empowering Smart</span> <br />Connections<br /></h2>
           <p>
             Welcome to Manjithaaza, where we specialize in providing smart
             digital accessories and services.
