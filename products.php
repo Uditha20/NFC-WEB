@@ -7,7 +7,7 @@ include "./include/header.php"
   <div class="container-fluid mt-3">
     <div class="row hero-section align-items-center">
       <div class="col-md-6" style="padding-left: 20px">
-        <h2>Smart NFC Cards</h2>
+        <h2 class="small-text">Smart NFC Cards</h2>
         <p>
           Discover our range of smart NFC cards for easy and effective
           communication.

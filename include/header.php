@@ -50,6 +50,9 @@
               ><img src="./asset/img/navlogo.png" alt=""
             /></a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.php">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
               </li>
@@ -58,6 +61,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./service.php">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.php">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./blog-post.php">Blogs</a>
