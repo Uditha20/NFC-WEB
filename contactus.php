@@ -7,13 +7,19 @@ include "./include/header.php"
       <div class="row hero-section align-items-center">
         <div class="col-md-6" style="padding-left: 20px">
           <div>
-            <h2>Get in Touch</h2>
+            <h2 class="small-text">Get in Touch</h2>
             <p>
               We're here to help. Contact us for any inquiries, support, or
               feedback.
             </p>
           </div>
         </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img
+          src="./asset/img/manjeeza.png"
+          class="img-fluid"
+          alt="Hero Section Image" />
+      </div>
       </div>
     </div>
 
