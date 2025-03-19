@@ -290,7 +290,7 @@
                 
                 <div class="price mb-3">Rs.2499</div>
                 
-                <a href="Frame8.html">
+                <a href="Frame8.php?price=2499">
 
                   <button class="btn-custom">Get Started</button>
                 </a>
@@ -309,7 +309,7 @@
                   
                 </div>
               </div>
-              <!-- <a href="Frame8.html" class="btn learn-more-btn">Learn More</a> -->
+              <!-- <a href="Frame8.php" class="btn learn-more-btn">Learn More</a> -->
             </div>
           </div>
         </div>
@@ -332,7 +332,7 @@
                 <p class="text-muted small">Share your social profile instantly</p>
                 
                 <div class="price mb-3">Rs.2799</div>
-                <a href="Frame8.html">
+                <a href="Frame8.php?price=2799">
 
                   <button class="btn-custom">Get Started</button>
                 </a>
@@ -373,7 +373,7 @@
                 <h5 class="mb-1">Social Profile Card</h5>
                 <p class="text-muted small">Share your social profile instantly</p>
                 <div class="price mb-3">Rs.6499</div>
-                <a href="Frame8.html">
+                <a href="Frame8.php?price=2699">
 
                   <button class="btn-custom">Get Started</button>
                 </a>

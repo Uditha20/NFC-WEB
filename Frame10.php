@@ -73,12 +73,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="./index.html"
+            <a class="navbar-brand" href="./index.php"
               ><img src="./asset/img/navlogo.png" alt=""
             /></a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.php"
                   >Home</a
                 >
               </li>
@@ -210,8 +210,8 @@
           </div>
   
           <div>
-            <a href="Frame9.html" class="btn btn-secondary me-3 px-4">Back</a>
-            <a href="Frame11.html" class="btn learn-more-btn px-4">Next</a>
+            <a href="Frame9.php" class="btn btn-secondary me-3 px-4">Back</a>
+            <a href="Frame11.php" class="btn learn-more-btn px-4">Next</a>
           </div>
         </div>
       </div>

@@ -33,12 +33,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="./index.html"
+            <a class="navbar-brand" href="./index.php"
               ><img src="./asset/img/navlogo.png" alt=""
             /></a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.php"
                   >Home</a
                 >
               </li>
@@ -113,11 +113,14 @@
       </div>
     </main>
     <div class="footer-checkout d-flex justify-content-between align-items-center">
-        <span class="h4 mb-0">Total</span>
-        <span class="h4 mb-0 fw-bold">Rs. 2499</span>
+        <span class="h4 mb-0">Total Rs.2499</span>
         <div class="d-flex">
-          <a href="Frame10.html" class="btn btn-secondary me-3 px-4">Back</a>
-            <button class="btn learn-more-btn">Proceed to Checkout</button>
+          <a href="Frame10.php" class="btn btn-secondary me-3 px-4">Back</a>
+          <form action="process_payment.php" method="POST" class="d-inline">
+            <input type="hidden" name="amount" value="2499"> <!-- Set the amount -->
+            <input type="hidden" name="currency" value="LKR"> <!-- Set the currency -->
+            <button type="submit" class="btn learn-more-btn">Proceed to Checkout</button>
+        </form>
         </div>
     </div>
 

@@ -1,3 +1,7 @@
+<?php
+$price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
+?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -179,14 +183,15 @@
             <label class="text-secondary"><sup>Total</sup></label>
             <div>
               <strong class="fs-2 fw-bold"
-                ><span class="fs-6">RS</span> 2499</strong
-              >
+                >
+                <span class="fs-6">RS</span> <?php echo $price; ?>
             </div>
           </div>
   
           <div>
             <button class="btn btn-secondary me-3 px-4">Back</button>
-            <a href="frame9.html" class="btn learn-more-btn px-4">Next</a>
+            <a href="frame9.php?price=<?php echo urlencode($price); ?>" class="btn learn-more-btn px-4">Next</a>
+
           </div>
         </div>
       </div>
