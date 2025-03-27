@@ -182,28 +182,45 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             id="mobile" />
         </div>
 
-        <div>
-
-
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Ex:sample@gmail.com" />
+        </div>
+        <div class="col-md-6">
+          <label for="address" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="Ex: 123, Galle Road, Colombo 03" />
         </div>
       </form>
     </div>
   </div>
 
   <!-- Footer Section -->
-  <div class="bg-black border-secondary border-top">
+  
+  <div class="bg-black border-secondary border-top mb-4">
     <div
       class="container d-flex justify-content-between align-items-center footer-buttons py-3">
       <div class="col-md-6">
         <label class="text-secondary"><sup>Total</sup></label>
         <div>
-          <strong class="fs-2 fw-bold"> <span class="fs-6">RS</span> <?php echo $price; ?>
+        <div>
+              <strong class="fs-2 fw-bold"
+                >
+                <span class="fs-6">RS</span> 2900.00
+            </div>
         </div>
       </div>
 
       <div>
         <a href="Frame8.php" class="btn btn-secondary me-3 px-4">Back</a>
-        <a href="Frame10.php" class="btn learn-more-btn px-4">Next</a>
+        <a href="Frame10.php?price=<?php echo urlencode($price); ?>" class="btn learn-more-btn px-4">Next</a>
       </div>
     </div>
   </div>

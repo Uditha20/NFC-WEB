@@ -11,6 +11,7 @@ body {
   margin-top: 0;
   padding: 0;
   height: 900px;
+  overflow: hidden;
 }
 .header,
 .footer-price {
@@ -171,13 +172,15 @@ input[type="radio"]:checked + .card-option {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid transparent;
+  height: 300px;
 }
 .card-option.selected {
   border-color: #ecc94b;
 }
 .card-option img {
   width: 60%;
-  height: 200px;
+  height: 230px;
+  padding-left: 10px;
 }
 .total {
   font-size: 1.5rem;

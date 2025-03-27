@@ -42,7 +42,7 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="./index.html"
+            <a class="navbar-brand" href="./index.php"
               ><img src="./asset/img/navlogo.png" alt=""
             /></a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -184,12 +184,13 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             <div>
               <strong class="fs-2 fw-bold"
                 >
-                <span class="fs-6">RS</span> <?php echo $price; ?>
+                <span class="fs-6">RS</span> 2900.00
             </div>
           </div>
   
           <div>
-            <button class="btn btn-secondary me-3 px-4">Back</button>
+          <a href="index.php" class="btn btn-secondary me-3 px-4">Back</a>
+
             <a href="frame9.php?price=<?php echo urlencode($price); ?>" class="btn learn-more-btn px-4">Next</a>
 
           </div>
