@@ -60,51 +60,47 @@
 </script>
 
 <body>
-  <div class="container-fluid mt-3">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="./index.php"><img src="./asset/img/navlogo.png" alt="" /></a>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.php">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./products.php">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./contactus.php">Contact</a>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="btn contact-us-btn">Login</button>
-            </li>
-            <li class="nav-item">
-              <a href="./login.php">
-                <button type="button" class="btn learn-more-btn">
-                  Get started
-                </button>
-              </a>
-            </li>
-          </ul>
-        </div>
+<div class="container mt-3">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="./index.php"><img src="./asset/img/navlogo.png" alt="" /></a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./products.php">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus.php">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn contact-us-btn">Login</button>
+          </li>
+          <li class="nav-item">
+            <a href="./login.php">
+              <button type="button" class="btn learn-more-btn">Get started</button>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+</div>
   <!-- hero section -->
   <div class="container-fluid mt-3">
     <div class="row d-flex hero-section align-items-center">
@@ -310,7 +306,8 @@
 
 
               <div class="price mb-3">Rs.2799</div>
-              <a href="Frame8.php?price=2799">
+              <a href="Frame8.php?price=2799&pack=rare">
+
 
                 <button class="btn-custom">Get Started</button>
               </a>
@@ -349,7 +346,7 @@
 
               <p class="">Share your social profile in an instant</p>
               <div class="price mb-3">Rs.6499</div>
-              <a href="Frame8.php?price=64d99">
+              <a href="Frame8.php?price=6499">
 
                 <button class="btn-custom btn-custom-pre">Get Started</button>
               </a>
@@ -472,7 +469,7 @@
     </div>
   </div>
 
-  <div class="container py-3 ">
+  <div class="container py-3">
 
     <div class="row d-flex justify-content-center" style="height: 600px;">
       <!-- Left Column - NFC Card -->
@@ -484,7 +481,7 @@
             </div>
             <h5 class="manjithaaza-card-title mx-3 mt-3">NFC Technology</h5>
             <p class="manjithaaza-card-text flex-grow-1 mx-3">
-              Lorem ipsum dolor sit amet, consecteturconsecteturconsectetur labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolorlabore et dolore magna aliqua.
+              Lorem ipsum dolor sit sit amet, consectetur  elit,do  incididunt ut labore et  magna do dolore magna dolore magna aliqua.Lorem do ipsum dolorlabore et dolore magna aliqua. labore labore Lorem ipsum dolor sit amet,
             </p>
             <div class="nfc-card-img">
               <img src="./asset/img/credit_card_!.png" class="card-img-bottom" alt="NFC Card">
@@ -566,40 +563,40 @@
 
   <div class="container mt-4">
     <div class="row g-4"> <!-- Added g-3 for spacing -->
-        <div class="col-md-3">
+      <div class="col-md-3">
         <div class="eco-col" style="background: url(./asset/img/eco-img-1.png);">
-                <h5>MReview Card</h5> 
-                <p>Share your Review page with NFC</p>
-            </div>
+          <h5>MReview Card</h5>
+          <p>Share your Review page with NFC</p>
         </div>
+      </div>
 
-        <div class="col-md-3">
-            <div class="eco-col" style="background: url(./asset/img/eco-img-2.png);">
-                <h5>MReview Card</h5> 
-                <p>Share your Review page with NFC</p>
-            </div>
+      <div class="col-md-3">
+        <div class="eco-col" style="background: url(./asset/img/eco-img-2.png);">
+          <h5>MReview Card</h5>
+          <p>Share your Review page with NFC</p>
         </div>
+      </div>
 
-        <div class="col-md-3">
+      <div class="col-md-3">
         <div class="eco-col" style="background: url(./asset/img/eco-img-1.png);">
-                <h5>MReview Card</h5> 
-                <p>Share your Review page with NFC</p>
-            </div>
+          <h5>MReview Card</h5>
+          <p>Share your Review page with NFC</p>
         </div>
+      </div>
 
-        <div class="col-md-3">
-            <div class="eco-col" style="background: url(./asset/img/eco-img-2.png);">
-                <h5>MReview Card</h5> 
-                <p>Share your Review page with NFC</p>
-            </div>
+      <div class="col-md-3">
+        <div class="eco-col" style="background: url(./asset/img/eco-img-2.png);">
+          <h5>MReview Card</h5>
+          <p>Share your Review page with NFC</p>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
 
   <!-- FAQ section -->
   <div class="container  mt-3 faq-section">
-    <div class="row align-items-center">
+    <div class="row  d-flex align-items-center justify-content-between">
       <div class="col-md-5">
         <h5 class="small-text">FAQs</h5>
         <h1 class="faq-heading"> Frequently Asked
@@ -611,7 +608,7 @@
         </p>
       </div>
 
-      <div class="col-md-7">
+      <div class="col-md-6">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -762,14 +759,17 @@
   </div>
 
   <!-- working -->
+  <div class="container yellow-box  d-flex justify-content-center align-items-center  mt-4">
+    <div class="">
 
-  <div class="container">
-    <div class="row yellow-box">
-      <div class="col-md-12 align-items-center d-flex justify-content-center">
+      <div class="">
+
         <h5>Lorem Ipsum Doler Sit Amet. Consectetur Adisiping</h5>
       </div>
+
     </div>
   </div>
+
 
   <div class="container mt-3">
     <div class="footer">
@@ -807,6 +807,8 @@
       ride: 'carousel'
     });
   });
+
+  
 </script>
 <script src="./js/transition.js"></script>
 

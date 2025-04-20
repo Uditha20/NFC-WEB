@@ -5,17 +5,18 @@
 $merchant_id = '1229822'; // Replace with your Merchant ID
 $merchant_secret = 'MjgwMTg1OTYwMzEzOTEyNzc2OTUxMjI2NTE3MjI4MTQ3ODg0MTIxMQ=='; // Replace with your Merchant Secret
 
-function generateHash($order_id, $amount, $currency) {
+function generateHash($order_id, $amount, $currency)
+{
     global $merchant_id, $merchant_secret;
-    
+
     return strtoupper(
         md5(
-            $merchant_id . 
-            $order_id . 
-            number_format((float)$amount, 2, '.', '') . 
-            $currency .  
-            strtoupper(md5($merchant_secret)) 
-        ) 
+            $merchant_id .
+                $order_id .
+                number_format((float)$amount, 2, '.', '') .
+                $currency .
+                strtoupper(md5($merchant_secret))
+        )
     );
 }
 
@@ -25,7 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $currency = $_POST['currency']; // Get the currency from the form
 
     $hash = generateHash($order_id, $amount, $currency);
-
+    $userData = $_SESSION['user_data'] ?? [
+        'name' => 'John Doe',
+        'email' => 'john@example.com',
+        'mobile' => '1234567890',
+        'address' => 'No. 1, Example Street, City',
+        'website' => 'https://example.com'
+    ];
+    // Explode the name into parts
+    $nameParts = explode(' ', $userData['name'], 2);
+    $firstName = $nameParts[0] ?? 'John';
+    $title = $nameParts[1] ?? 'Doe'; // Default if no second word exists
     $payment_data = [
         'merchant_id' => $merchant_id,
         'return_url' => 'http://localhost/nfcweb', // Replace with your return URL
@@ -36,15 +47,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'amount' => number_format((float)$amount, 2, '.', ''),
         'currency' => $currency,
         'hash' => $hash,
-        'first_name' => 'John', // Required: Customer first name
-        'last_name' => 'Doe', // Required: Customer last name
-        'email' => 'johndoe@example.com', // Required: Customer email
-        'phone' => '0771234567', // Required: Customer phone
-        'address' => '123, Street, City', // Required: Customer address
-        'city' => 'Colombo', // Required: Customer city
-        'country' => 'Sri Lanka', // Required: Customer country
+        'name' => $firstName, // First word of the name
+        'title' => $title, // Second word of the name (if exists)
+        'website' => $userData['website'] ?? 'no', // Website
+        'mobile' => $userData['mobile'] ?? 'no', // Mobile number
+        'email' => $userData['email'] ?? 'no', // Correct email assignment
+        'address' => $userData['address'] ?? 'no', // Address
+
     ];
-    
+
     // Generate an auto-submitting form
     echo '<form id="payhere_form" action="https://sandbox.payhere.lk/pay/checkout" method="POST">';
     foreach ($payment_data as $key => $value) {

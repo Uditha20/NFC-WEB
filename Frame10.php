@@ -1,5 +1,7 @@
 <?php
-$price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
+$basePrice = isset($_GET['price']) ? (int)htmlspecialchars($_GET['price']) : 0;
+$selectedPrice = 0; // Default selected card price
+$totalPrice = $basePrice + $selectedPrice;
 ?>
 <html lang="en">
 
@@ -17,45 +19,7 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/Framestyle.css" />
-  <style>
-    /* body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #1a202c;
-            color: white;
-        } */
-    /* .header {
-            background-color: #2d3748;
-            padding: 1rem;
-        } */
-    /* 
-      .step-indicator {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-      }
-      .step-indicator .step {
-        display: flex;
-        align-items: center;
-        margin-right: 1rem;
-      }
-      .step-indicator .step .circle {
-        width: 1rem;
-        height: 1rem;
-        background-color: #ecc94b;
-        border-radius: 50%;
-        margin-right: 0.5rem;
-      }
-      .step-indicator .step .line {
-        width: 2rem;
-        height: 0.25rem;
-        background-color: #ecc94b;
-        margin-right: 0.5rem;
-      }
-      .step-indicator .step.inactive .circle,
-      .step-indicator .step.inactive .line {
-        background-color: #4a5568;
-      } */
-  </style>
+
 </head>
 
 <body>
@@ -110,26 +74,26 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
     <div class="stepper-wrapper ">
       <div class="stepper">
         <div class="progress-line"></div>
-        <div class="progress-line-active"></div>
+        <div class="progress-line-active" style="width: 75%;"></div>
+
+        <div class="step completed">
+          <div class="step-circle"></div>
+          <div class="step-title">Select Type</div>
+        </div>
+
+        <div class="step active">
+          <div class="step-circle"></div>
+          <div class="step-title">Select Style</div>
+        </div>
 
         <div class="step completed">
           <div class="step-circle"></div>
           <div class="step-title">Package Details</div>
         </div>
 
-        <div class="step active">
-          <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
-        </div>
-
         <div class="step">
           <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
-        </div>
-
-        <div class="step">
-          <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
+          <div class="step-title">Processing Details</div>
         </div>
       </div>
     </div>
@@ -145,11 +109,11 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             <span class="text-warning">Default</span>
           </div>
         </div>
-        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" />
+        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" class="img-fluid"/>
       </div>
     </div>
     <div class="col-md-5 mb-4">
-      <div class="card-option p-3 d-flex" style="cursor:pointer" data-price="1210">
+      <div class="card-option p-3 d-flex" style="cursor:pointer" data-price="1000">
         <div class="d-flex align-items-center mb-3">
           <input type="radio" name="card" class="mr-2" />
           <div>
@@ -158,7 +122,7 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             <span>+1,000 LKR</span>
           </div>
         </div>
-        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" />
+        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" class="img-fluid"/>
       </div>
     </div>
     <div class="col-md-5 mb-4">
@@ -171,24 +135,45 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             <span>+1,500 LKR</span>
           </div>
         </div>
-        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" />
+        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" class="img-fluid" />
       </div>
     </div>
-    <div class="col-md-5 mb-4">
-      <div class="card-option p-3 d-flex" style="cursor:pointer;">
+    <div class="col-md-5 mb-5">
+      <div class="card-option p-3 d-flex" style="cursor:pointer;" data-price="2000">
         <div class="d-flex align-items-center mb-3">
           <input type="radio" name="card" class="mr-2" />
           <div>
             <h5 class="font-weight-bold">Matt PVC</h5>
             <p>Durable PVC Card with Glossy Print</p>
-            <span>2000 LKR</span>
+            <span>+2,000 LKR</span>
           </div>
         </div>
-        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" />
+        <img src="./asset/img/frame10.png" alt="Glossy PVC Card" class="img-fluid"/>
       </div>
     </div>
   </div>
-  <div class="bg-black border-secondary border-top">
+
+  <!-- Price Display -->
+  <div class="bg-black border-secondary border-top fixed-bottom">
+    <div class="container d-flex justify-content-between align-items-center footer-buttons py-3">
+        <div class="col-md-6 mt-3">
+            <label class="text-secondary"><sup>Total</sup></label>
+            <div>
+                <strong class="fs-2 fw-bold">
+                    <span class="fs-6">RS</span> 
+                    <span id="displayTotalPrice"><?php echo $totalPrice; ?></span>.00
+                </strong>
+            </div>
+        </div>
+
+        <div>
+        <a href="Frame9.php?price=<?php echo urlencode($totalPrice); ?>" class="btn btn-secondary me-3 px-4" id="backButton">Back</a>
+            <a href="Frame11.php?price=<?php echo urlencode($totalPrice); ?>" class="btn learn-more-btn px-4" id="nextButton">Next</a>
+        </div>
+    </div>
+</div>
+
+  <!-- <div class="bg-black border-secondary border-top">
     <div
       class="container d-flex justify-content-between align-items-center footer-buttons py-3">
       <div class="col-md-6">
@@ -196,7 +181,7 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
         <div>
               <strong class="fs-2 fw-bold"
                 >
-                <span class="fs-6">RS</span> 2900.00
+                <span class="fs-6">RS</span>
             </div>
       </div>
 
@@ -205,30 +190,56 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
         <a href="Frame11.php" class="btn learn-more-btn px-4">Next</a>
       </div>
     </div>
-  </div>
-
+  </div> -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const cardOptions = document.querySelectorAll('.card-option');
-      const totalPriceElement = document.getElementById('total-price'); // Element to display total price
+document.addEventListener("DOMContentLoaded", function() {
+    const cardOptions = document.querySelectorAll('.card-option');
+    const basePrice = <?php echo $basePrice; ?>;
+    const displayTotalPrice = document.getElementById('displayTotalPrice');
+    const nextButton = document.getElementById('nextButton');
 
-      cardOptions.forEach(card => {
+    function updateSelection(selectedCard) {
+        // Remove 'selected' class from all cards
+        cardOptions.forEach(card => card.classList.remove('selected'));
+
+        // Add 'selected' class to the clicked card
+        selectedCard.classList.add('selected');
+
+        // Get the selected price
+        const selectedPrice = parseInt(selectedCard.getAttribute('data-price')) || 0;
+        
+        // Calculate total
+        const totalPrice = basePrice + selectedPrice;
+
+        // Update display
+        displayTotalPrice.textContent = totalPrice;
+
+        // Update Next button URL
+
+        nextButton.href = `Frame11.php?price=${totalPrice}`;
+        // backButton.href = `Frame9.php?price=${totalPrice}`; 
+
+        // Check the associated radio button
+        const radioButton = selectedCard.querySelector('input[type="radio"]');
+        if (radioButton) {
+            radioButton.checked = true;
+        }
+    }
+
+    // Add event listeners to all card options
+    cardOptions.forEach(card => {
         card.addEventListener('click', function() {
-          // Remove 'selected' class from all cards
-          cardOptions.forEach(c => c.classList.remove('selected'));
-
-          // Add 'selected' class to the clicked card
-          this.classList.add('selected');
-
-          // Get the price from the selected card
-          const price = this.getAttribute('data-price');
-
-          // Update the total price display
-          totalPriceElement.textContent = `Total: ${price} LKR`;
+            updateSelection(this);
         });
-      });
     });
-  </script>
+
+    // Select the first card by default
+    if (cardOptions.length > 0) {
+        updateSelection(cardOptions[0]);
+    }
+});
+</script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

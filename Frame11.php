@@ -1,3 +1,7 @@
+<?php
+$totlPrice = isset($_GET['price']) ? (int)htmlspecialchars($_GET['price']) : 0;
+
+?>
 <html lang="en">
 
 <head>
@@ -68,26 +72,26 @@
     <div class="stepper-wrapper ">
       <div class="stepper">
         <div class="progress-line"></div>
-        <div class="progress-line-active"></div>
+        <div class="progress-line-active" style="width: 100%;"></div>
+
+        <div class="step completed">
+          <div class="step-circle"></div>
+          <div class="step-title">Select Type</div>
+        </div>
+
+        <div class="step active">
+          <div class="step-circle"></div>
+          <div class="step-title">Select Style</div>
+        </div>
 
         <div class="step completed">
           <div class="step-circle"></div>
           <div class="step-title">Package Details</div>
         </div>
 
-        <div class="step active">
+        <div class="step completed">
           <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
-        </div>
-
-        <div class="step">
-          <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
-        </div>
-
-        <div class="step">
-          <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
+          <div class="step-title">Processing Details</div>
         </div>
       </div>
     </div>
@@ -108,14 +112,15 @@
         <label class="text-secondary"><sup>Total</sup></label>
         <div>
           <strong class="fs-2 fw-bold">
-            <span class="fs-6">RS</span> 2900.00
+            <span class="fs-6">RS</span> <?php echo $totlPrice; ?>.00
+
         </div>
       </div>
 
       <div>
-        <a href="Frame10.php" class="btn btn-secondary me-3 px-4">Back</a>
+        <a href="Frame10.php?price=<?php echo urlencode($totlPrice); ?>" class="btn btn-secondary me-3 px-4">Back</a>
         <form action="process_payment.php" method="POST" class="d-inline">
-          <input type="hidden" name="amount" value="2499">
+          <input type="hidden" name="amount" id="amountInput" value="0">
           <input type="hidden" name="currency" value="LKR">
           <button type="submit" class="btn learn-more-btn">Proceed to Checkout</button>
         </form>
@@ -137,6 +142,18 @@
     </div> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the price from the URL (e.g., Frame10.php?price=1000)
+      const urlParams = new URLSearchParams(window.location.search);
+      const priceFromUrl = urlParams.get('price');
+
+      // If a price exists in the URL, update the hidden input
+      if (priceFromUrl) {
+        document.getElementById("amountInput").value = priceFromUrl;
+      }
+    });
+  </script>
 </body>
 
 </html>

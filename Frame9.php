@@ -1,5 +1,7 @@
 <?php
 $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
+$pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
+
 ?>
 
 <!DOCTYPE html>
@@ -116,46 +118,56 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
     <div class="stepper-wrapper ">
       <div class="stepper">
         <div class="progress-line"></div>
-        <div class="progress-line-active"></div>
+        <div class="progress-line-active" style="width: 50%;"></div>
 
         <div class="step completed">
           <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
+          <div class="step-title">Select Type</div>
+
+
         </div>
 
-        <div class="step active">
+        <div class="step active completed">
+          <div class="step-circle"></div>
+          <div class="step-title">Select Style</div>
+        </div>
+
+        <div class="step">
           <div class="step-circle"></div>
           <div class="step-title">Package Details</div>
         </div>
 
         <div class="step">
           <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
-        </div>
+          <div class="step-title">Processing Details</div>
 
-        <div class="step">
-          <div class="step-circle"></div>
-          <div class="step-title">Package Details</div>
+
         </div>
       </div>
     </div>
   </div>
   <!-- Content Section -->
-  <div class="d-flex overflow-y-auto flex-fill">
-    <div class="container my-4 col-md-8" data-bs-theme="dark">
-      <div class="d-flex justify-content-center">
-        <div class="col">
-          <img src="./asset/img/frame9.png" class="w-100" alt="" />
+  <div class="d-flex">
+    <div class="container my-4 col-md-9 pb-5" data-bs-theme="dark">
+      <div class="d-flex gap-3 flex-wrap justify-content-center">
+        <div class="col-md-5">
+          <p class="mb-2">Front Side</p>
+          <img src="./asset/img/front .png" class="w-100 card-image" id="cardFront" alt="Business Card Front" />
+        </div>
+        <div class="col-md-5">
+          <p class="mb-2">Back Side</p>
+          <img src="./asset/img/back.png" class="w-100 card-image" id="cardBack" alt="Business Card Back" />
         </div>
       </div>
 
-      <form class="row g-3">
+      <form class="row g-3 mb-5">
         <div class="col-md-6">
           <label for="name" class="form-label">Name</label>
           <input
             type="text"
-            class="form-control bg-dark"
+            class="form-control bg-dark text-light"
             id="name"
+            required
             placeholder="Ex: Jehan Fernando" />
         </div>
         <div class="col-md-6">
@@ -164,6 +176,7 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
             type="text"
             class="form-control"
             id="title"
+            required
             placeholder="Ex: CEO" />
         </div>
         <div class="col-md-6">
@@ -179,53 +192,168 @@ $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
           <input
             type="text"
             class="form-control"
+            required
+            placeholder="Ex: 0712345678"
             id="mobile" />
         </div>
-
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
           <input
             type="email"
             class="form-control"
+            required
             id="email"
-            placeholder="Ex:sample@gmail.com" />
+            placeholder="Ex: sample@gmail.com" />
         </div>
         <div class="col-md-6">
           <label for="address" class="form-label">Address</label>
           <input
             type="text"
             class="form-control"
+            required
             id="address"
             placeholder="Ex: 123, Galle Road, Colombo 03" />
         </div>
+        <?php if ($pack === 'rare' || $pack === 'delux'): ?>
+          <div class="col-md-6" style="height: 100px;">
+            <label for="colorScheme" class="form-label">Color Scheme</label>
+            <select class="form-select" id="colorScheme" required onchange="changeCardImages(this.value)">
+              <option value="" selected disabled>Choose a color scheme...</option>
+              <option value="regal-crest">Regal Crest (Navy & Gold)</option>
+              <option value="urban-mint">Urban Mint (Charcoal & Mint)</option>
+              <option value="forest-purity">Forest Purity (White & Forest Green)</option>
+              <option value="twilight-coral">Twilight Coral (Midnight Blue & Coral)</option>
+              <option value="neon-noir">Neon Noir (Black & Electric Lime)</option>
+              <option value="coastal-sunset">Coastal Sunset (Dark Teal & Peach)</option>
+              <option value="sunlit-stone">Sunlit Stone (Slate Gray & Sunflower Yellow)</option>
+              <option value="vintage-elegance">Vintage Elegance (Burgundy & Ivory)</option>
+              <option value="royal-lavender">Royal Lavender (Deep Purple & Lavender)</option>
+              <option value="scarlet-mist">Scarlet Mist (Crimson & Light Gray)</option>
+            </select>
+          </div>
+        <?php endif; ?>
+        <!-- <div class="col-12 mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div> -->
       </form>
     </div>
   </div>
 
   <!-- Footer Section -->
-  
-  <div class="bg-black border-secondary border-top mb-4">
-    <div
-      class="container d-flex justify-content-between align-items-center footer-buttons py-3">
-      <div class="col-md-6">
+  <div class="bg-black border-secondary border-top fixed-bottom">
+    <div class="container d-flex justify-content-between align-items-center footer-buttons py-3">
+      <div class="col-md-6 mt-3">
         <label class="text-secondary"><sup>Total</sup></label>
         <div>
-        <div>
-              <strong class="fs-2 fw-bold"
-                >
-                <span class="fs-6">RS</span> 2900.00
-            </div>
+          <strong class="fs-2 fw-bold">
+            <span class="fs-6">RS</span> <?php echo $price; ?>.00
+          </strong>
         </div>
       </div>
 
       <div>
-        <a href="Frame8.php" class="btn btn-secondary me-3 px-4">Back</a>
+        <a href="Frame8.php?price=<?php echo urlencode($price); ?>" class="btn btn-secondary me-3 px-4">Back</a>
         <a href="Frame10.php?price=<?php echo urlencode($price); ?>" class="btn learn-more-btn px-4">Next</a>
       </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const formFields = ["name", "title", "website", "mobile", "email", "address"];
+
+      // Load saved data (if any) when page loads
+      const savedData = sessionStorage.getItem("formData");
+      if (savedData) {
+        const formData = JSON.parse(savedData);
+        formFields.forEach(field => {
+          const input = document.getElementById(field);
+          if (input && formData[field]) {
+            input.value = formData[field];
+          }
+        });
+      }
+
+      // Auto-save when any input changes
+      formFields.forEach(field => {
+        const input = document.getElementById(field);
+        if (input) {
+          input.addEventListener("input", function() {
+            saveFormData();
+          });
+        }
+      });
+
+      function saveFormData() {
+        const formData = {};
+        formFields.forEach(field => {
+          const input = document.getElementById(field);
+          if (input) {
+            formData[field] = input.value;
+          }
+        });
+        sessionStorage.setItem("formData", JSON.stringify(formData));
+        // Use localStorage.setItem() for persistent storage
+      }
+    });
+
+    function changeCardImages(colorScheme) {
+      // Define image paths for each color scheme
+      const imagePaths = {
+        'regal-crest': {
+          front: './asset/img/Deluxe front 1.png',
+          back: './asset/img/Deluxe back 1.png'
+        },
+        'urban-mint': {
+          front: './asset/img/Deluxe front 2.png',
+          back: './asset/img/Deluxe back 2.png'
+        },
+        'forest-purity': {
+          front: './asset/img/Deluxe front 3.png',
+          back: './asset/img/Deluxe back 3.png'
+        },
+        'twilight-coral': {
+          front: './asset/img/Deluxe front 4.png',
+          back: './asset/img/Deluxe back 4.png'
+        },
+        'neon-noir': {
+          front: './asset/img/Deluxe front 5.png',
+          back: './asset/img/Deluxe back 5.png'
+        },
+        'coastal-sunset': {
+          front: './asset/img/Deluxe front 6.png',
+          back: './asset/img/Deluxe back 6.png'
+        },
+        'sunlit-stone': {
+          front: './asset/img/Deluxe front 7.png',
+          back: './asset/img/Deluxe back 7.png'
+        },
+        'vintage-elegance': {
+          front: './asset/img/Deluxe front 8.png',
+          back: './asset/img/Deluxe back 8.png'
+        },
+        'royal-lavender': {
+          front: './asset/img/Deluxe front 9.png',
+          back: './asset/img/Deluxe back 9.png'
+        },
+        'scarlet-mist': {
+          front: './asset/img/Deluxe front 10.png',
+          back: './asset/img/Deluxe back 10.png'
+        }
+      };
+
+      // Get the image elements
+      const frontImage = document.getElementById('cardFront');
+      const backImage = document.getElementById('cardBack');
+
+      // Update image sources if the color scheme exists in our mapping
+      if (imagePaths[colorScheme]) {
+        frontImage.src = imagePaths[colorScheme].front;
+        backImage.src = imagePaths[colorScheme].back;
+      }
+    }
+  </script>
 </body>
 
 </html>
