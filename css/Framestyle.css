@@ -83,7 +83,10 @@ body {
 .navbar-toggler {
   border: none;
 }
-
+.navbar-toggler-icon {
+  background-color: rgb(10, 11, 75); /* Set background color to white */
+  border-radius: 5px; /* Optional: Add border radius for a smoother look */
+}
 .navbar-toggler:hover .navbar-toggler-icon {
   transform: rotate(90deg);
 }
@@ -108,6 +111,34 @@ body {
 
 .navbar-nav .nav-item:hover {
   transform: translateY(-3px);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-item {
+    margin-right: 5px;
+  }
+
+  .navbar-brand img {
+    max-height: 30px;
+  }
+
+  .contact-us-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
 }
 
 .learn-more-btn {
@@ -277,4 +308,68 @@ input[type="radio"]:checked + .card-option {
   height: 2px;
   background-color: #ffc107;
   z-index: 0;
+}
+
+
+@media (max-width: 576px) {
+  .stepper-wrapper {
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container .card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 10px;
+  }
+
+  .card .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .card .circle {
+    margin-bottom: 10px;
+  }
+
+  .card h5,
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    width: 100% !important;
+    height: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .card-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-buttons {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .footer-buttons .col-md-6 {
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .footer-buttons a,
+  .footer-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

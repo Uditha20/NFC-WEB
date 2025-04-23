@@ -60,47 +60,47 @@
 </script>
 
 <body>
-<div class="container mt-3">
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="./index.php"><img src="./asset/img/navlogo.png" alt="" /></a>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./products.php">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contactus.php">Contact</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn contact-us-btn">Login</button>
-          </li>
-          <li class="nav-item">
-            <a href="./login.php">
-              <button type="button" class="btn learn-more-btn">Get started</button>
-            </a>
-          </li>
-        </ul>
+  <div class="container mt-3">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="./index.php"><img src="./asset/img/navlogo.png" alt="" /></a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./products.php">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.php">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn contact-us-btn">Login</button>
+            </li>
+            <li class="nav-item">
+              <a href="./login.php">
+                <button type="button" class="btn learn-more-btn">Get started</button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
   <!-- hero section -->
   <div class="container-fluid mt-3">
     <div class="row d-flex hero-section align-items-center">
@@ -116,7 +116,7 @@
             <i class="bi bi-star-fill hero-icon"></i>
           </div>
 
-          <p class="hero-small">600+ Satisfied Customers</p>
+          <p class="hero-small">1000+ Satisfied Customers</p>
         </div>
         <h2 class="text-center position-relative">
           Sri Lanka's Leading
@@ -132,7 +132,7 @@
         </h2>
         <p class="dark-text">
           Customize your NFC Business Card Now and Get it to your hands within
-          48 hours
+          72 hours
         </p>
         <button type="button" class="btn learn-more-btn me-2">
           Learn More
@@ -185,47 +185,43 @@
     <div class="row d-flex justify-content-between">
       <div class="col-md-4">
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Instant Contact Sharing</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            Just tap your card on a smartphone to instantly share your contact details. No apps or typing needed.
           </p>
         </div>
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Eco-Friendly</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            Say goodbye to paper business cards. Manjithaaza cards are made from recyclable plastic, helping to reduce paper waste.
           </p>
         </div>
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Custom Designs at No Extra Cost</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            Get a personalized design for your card for free. Make your card reflect your unique style.
+
+
           </p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Manage Contacts Easily</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            With the Manjithaaza app, you can organize and manage your contacts effortlessly, enhancing your networking experience.
           </p>
         </div>
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Multiple Profiles for Different Needs</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            Premium users can create multiple profiles on one card, allowing you to share different information depending on the situation.
           </p>
         </div>
         <div class="mcard-box">
-          <b>Fully Customizable Card</b>
+          <b>Stylish and Durable</b>
           <p class="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqu
+            Not only functional, but Manjithaaza cards are also designed to be fashionable and long-lasting, making a great impression.
           </p>
         </div>
       </div>
@@ -238,7 +234,7 @@
         <p style="text-align: center" class="small-text">MCard</p>
         <h1 style="text-align: center">Get Started today with <span class="small-text">MCard</span></h1>
         <p style="text-align: center; line-height: 28px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Choose your Manjithaaza smart card package today and start sharing your contact information with just a tap!
         </p>
       </div>
     </div>
@@ -258,10 +254,10 @@
           <!-- Card content -->
           <div
             class="card-body d-flex flex-column justify-content-center card-price-body">
-            <h5 class="card-title text-center small-text">Socia</h5>
+            <h5 class="card-title text-center small-text">Prime Card</h5>
             <div class="text-center">
 
-              <p class="">Share your social profile in an instant</p>
+              <p class="">A minimalist smart card featuring a white background with black lettering. Ideal for professionals seeking a clean and straightforward design.</p>
 
               <div class="price mb-3">Rs.2499</div>
 
@@ -271,10 +267,11 @@
               </a>
 
               <ul class="feature-list text-start">
-                <li>Add Your Social Media or Linktree</li>
-                <li>Black and White Design</li>
-                <li>Name and Title</li>
-                <li>NFC and QR Facility</li>
+                <li>Black and white design</li>
+                <li>Your name and designation on the card</li>
+                <li>NFC and QR code enabled</li>
+                <li>Manjithaaza all premium profile features</li>
+                <li>Personalized login</li>
               </ul>
 
               <div class="icons-row">
@@ -299,10 +296,10 @@
           <!-- Card content -->
           <div
             class="card-body d-flex flex-column justify-content-center card-price-body">
-            <h5 class="card-title text-center small-text">Rare</h5>
+            <h5 class="card-title text-center small-text">Deluxe Card</h5>
             <div class="text-center">
 
-              <p class="">Share your social profile in an instant</p>
+              <p class="">A two-color smart card offering a balance between simplicity and personalization. Perfect for those wanting a touch of color in their networking tools.</p>
 
 
               <div class="price mb-3">Rs.2799</div>
@@ -313,11 +310,13 @@
               </a>
 
               <ul class="feature-list text-start">
-                <li>Add Your Social Media or Linktree</li>
-                <li>Black and White Design</li>
-                <li>Name and Title</li>
-                <li>NFC and QR Facility</li>
+                <li>Two-color design</li>
+                <li>Your name, company, and position on the card</li>
+                <li>NFC and QR code enabled</li>
+                <li>Manjithaaza all premium profile features</li>
+                <li>Personalized login</li>
               </ul>
+
 
               <div class="icons-row">
                 <div class="">
@@ -341,23 +340,25 @@
           <!-- Card content -->
           <div
             class="card-body d-flex flex-column justify-content-center card-price-body">
-            <h5 class="card-title text-center small-text">Deluxe</h5>
+            <h5 class="card-title text-center small-text mt-4">Elite Card</h5>
             <div class="text-center">
 
-              <p class="">Share your social profile in an instant</p>
+              <p class="">A fully customizable smart card that allows you to design every aspect to reflect your unique brand. Best suited for individuals desiring complete personalization and advanced features.</p>
               <div class="price mb-3">Rs.6499</div>
-              <a href="Frame8.php?price=6499">
+              <a href="Frame8.php?price=6499&pack=delux"">
 
-                <button class="btn-custom btn-custom-pre">Get Started</button>
+                <button class=" btn-custom btn-custom-pre">Get Started</button>
               </a>
 
 
 
               <ul class="feature-list text-start">
-                <li>Add Your Social Media or Linktree</li>
-                <li>Black and White Design</li>
-                <li>Name and Title</li>
-                <li>NFC and QR Facility</li>
+                <li>Fully customizable, full-color design</li>
+                <li>Upgradable company profile</li>
+                <li>Personalized Manjithaaza web profile link</li>
+                <li>NFC and QR code enabled</li>
+                <li>Manjithaaza all premium profile features</li>
+                <li>Personalized login</li>
               </ul>
 
               <div class="icons-row">
@@ -463,15 +464,14 @@
         <p style="text-align: center" class="small-text">PRODUCTS</p>
         <h1 class="text-center">Why<span class="small-text"> Manjithaaza</span> is Special</h1>
         <p style="text-align: center; line-height: 28px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+          Our smart‐card solutions are engineered to elevate your brand, simplify connections, and turn every tap into actionable insight. </p>
       </div>
     </div>
   </div>
 
   <div class="container py-3">
 
-    <div class="row d-flex justify-content-center" style="height: 600px;">
+    <div class="row d-flex justify-content-center">
       <!-- Left Column - NFC Card -->
       <div class="col-md-3 h-100">
         <div class="manjithaaza-card left-card-custom">
@@ -481,7 +481,8 @@
             </div>
             <h5 class="manjithaaza-card-title mx-3 mt-3">NFC Technology</h5>
             <p class="manjithaaza-card-text flex-grow-1 mx-3">
-              Lorem ipsum dolor sit sit amet, consectetur  elit,do  incididunt ut labore et  magna do dolore magna dolore magna aliqua.Lorem do ipsum dolorlabore et dolore magna aliqua. labore labore Lorem ipsum dolor sit amet,
+              Instant, contactless sharing at the tap of a card.
+              Embed powerful NFC chips in your cards so prospects, partners or clients can access your full profile, portfolio, menu or review page—with zero app installs and no awkward QR scanning.
             </p>
             <div class="nfc-card-img">
               <img src="./asset/img/credit_card_!.png" class="card-img-bottom" alt="NFC Card">
@@ -493,7 +494,7 @@
       <!-- Right Column -->
       <div class="col-md-9">
         <!-- Profile Section -->
-        <div class="manjithaaza-card mb-4">
+        <div class="manjithaaza-card mb-4 h-50">
           <div class="card-body d-flex align-items-center">
             <div class="flex-grow-1 pe-3">
               <div class="union-pic mx-4">
@@ -501,8 +502,9 @@
               </div>
               <h5 class="manjithaaza-card-title mx-3">Manjithaaza Profile</h5>
               <p class="manjithaaza-card-text mx-3">
-                Manage your digital identity with our comprehensive profile system.
-                Connect, share, and interact seamlessly across platforms.
+                Unify your digital identity in one place.
+                Customize your Manjithaaza Profile with Manjithaaza mobile app . Or you can easily edit it with login to our website.
+
               </p>
               <div class="app-badges mt-3 mx-3">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
@@ -515,16 +517,17 @@
         </div>
 
         <!-- Two NFC Technology Cards -->
-        <div class="row g-4 h-50">
+        <div class="row g-4" >
           <div class="col-md-6">
-            <div class="manjithaaza-card h-100">
+            <div class="manjithaaza-card" style="height: 240px;">
               <div class="card-body">
                 <div class="union-pic mx-4">
                   <img src="./asset/img/Union.png" class="img-fluid pt-3" alt="Profile">
                 </div>
-                <h5 class="manjithaaza-card-title mt-2 mx-3">NFC Technology</h5>
+                <h5 class="manjithaaza-card-title mt-2 mx-3">Premium card Customization</h5>
                 <p class="manjithaaza-card-text mx-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Cards that look and feel as exceptional as your business.
+                  Choose from a wide range of materials (metal, PVC, wood), premium finishes (matte, gloss, holographic foil) and built in features (NFC, QR, RFID) to perfectly match your brand.
                 </p>
               </div>
             </div>
@@ -535,9 +538,10 @@
                 <div class="union-pic mx-4">
                   <img src="./asset/img/Union.png" class="img-fluid pt-3" alt="Profile">
                 </div>
-                <h5 class="manjithaaza-card-title mt-2 mx-3">NFC Technology</h5>
+                <h5 class="manjithaaza-card-title mt-2 mx-3">Premium card Customization</h5>
                 <p class="manjithaaza-card-text mx-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Cards that look and feel as exceptional as your business.
+                  Choose from a wide range of materials (metal, PVC, wood), premium finishes (matte, gloss, holographic foil) and built in features (NFC, QR, RFID) to perfectly match your brand.
                 </p>
               </div>
             </div>
@@ -553,7 +557,8 @@
         <p style="text-align: center">PRODUCTS</p>
         <h1 style="text-align: center"> <span class="small-text">Manjithaaza </span>Ecosystem</h1>
         <p style="text-align: center; line-height: 28px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        Manjithaaza’s ecosystem pairs smart cards with review cards and stands to help brands increase visibility and cultivate a positive image with customers through seamless feedback.
         </p>
       </div>
     </div>
@@ -599,13 +604,7 @@
     <div class="row  d-flex align-items-center justify-content-between">
       <div class="col-md-5">
         <h5 class="small-text">FAQs</h5>
-        <h1 class="faq-heading"> Frequently Asked
-          Questions</h1>
-
-
-        <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h1 class="faq-heading">Find answers to common questions about our smart NFC cards and services.</h1>
       </div>
 
       <div class="col-md-6">
@@ -619,7 +618,7 @@
                 data-bs-target="#flush-collapsesix"
                 aria-expanded="false"
                 aria-controls="flush-collapsesix">
-                Accordion Item #1
+                How do NFC cards work?
               </button>
             </h2>
             <div
@@ -627,13 +626,13 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the first item's accordion body.
+                NFC cards use near field communication technology to securely transmit data between devices when they are in close proximity. They are equipped with a small chip that stores information and can be read by compatible devices, such as smartphones or card readers.
+                Contac
+
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <!-- <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -655,7 +654,7 @@
                 the first item's accordion body.
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -665,7 +664,7 @@
                 data-bs-target="#flush-collapseOne"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne">
-                Accordion Item #1
+                Are NFC cards secure?
               </button>
             </h2>
             <div
@@ -673,9 +672,7 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the first item's accordion body.
+                Yes, NFC cards are secure. They use encryption and authentication protocols to ensure the privacy and integrity of the data being transmitted. Additionally, NFC technology requires physical proximity, reducing the risk of unauthorized access.
               </div>
             </div>
           </div>
@@ -685,20 +682,18 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
+                data-bs-target="#flush-collapseOnee"
                 aria-expanded="false"
-                aria-controls="flush-collapseOne">
-                Accordion Item #1
+                aria-controls="flush-collapseOnee">
+                Can NFC cards be customized?
               </button>
             </h2>
             <div
-              id="flush-collapseOne"
+              id="flush-collapseOnee"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the first item's accordion body.
+                Yes, our NFC cards can be customized. We offer online card design tools that allow you to create your own unique design, incorporating your branding and contact information. You can choose from various templates and personalize the layout, colors, and content.
               </div>
             </div>
           </div>
@@ -711,7 +706,7 @@
                 data-bs-target="#flush-collapseTwo"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo">
-                Accordion Item #2
+                How can I order NFC cards?
               </button>
             </h2>
             <div
@@ -719,10 +714,7 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the second item's accordion body. Let's imagine this being
-                filled with some actual content.
+                To order NFC cards, simply visit our website and navigate to the Smart Card Packages section. Select the package that suits your needs, customize your card design, and proceed to checkout. We offer secure online payment options and fast shipping or contact us.
               </div>
             </div>
           </div>
@@ -735,7 +727,7 @@
                 data-bs-target="#flush-collapseThree"
                 aria-expanded="false"
                 aria-controls="flush-collapseThree">
-                Accordion Item #3
+                What are the benefits of NFC cards?
               </button>
             </h2>
             <div
@@ -743,13 +735,7 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is
-                the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the
-                space to make it look, at least at first glance, a bit more
-                representative of how this would look in a real-world
-                application.
+                NFC cards offer several benefits. They provide a convenient and efficient way to share contact information, eliminating the need for traditional business cards. They can also be used for access control, loyalty programs, and interactive marketing campaigns. Additionally, NFC cards are eco-friendly and cost-effective.
               </div>
             </div>
           </div>
@@ -764,7 +750,7 @@
 
       <div class="">
 
-        <h5>Lorem Ipsum Doler Sit Amet. Consectetur Adisiping</h5>
+        <h5>Ready to be smart? Click here to get in touch with us!</h5>
       </div>
 
     </div>
@@ -807,8 +793,6 @@
       ride: 'carousel'
     });
   });
-
-  
 </script>
 <script src="./js/transition.js"></script>
 

@@ -704,7 +704,7 @@ h1 {
 
 .card-price {
   width: 420px;
-  height: 700px;
+  height: 800px;
   text-align: center;
   color: white; /* Adjust text color for contrast */
 }
@@ -722,15 +722,10 @@ h1 {
 
 .card-price-body {
   margin-top: 90px;
+
 }
 
-/* Base styles (unchanged) */
-.card-price {
-  width: 420px;
-  height: 700px;
-  text-align: center;
-  color: white; /* Adjust text color for contrast */
-}
+
 
 .card-price-outer {
   width: 280px;

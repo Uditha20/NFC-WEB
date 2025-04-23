@@ -12,8 +12,14 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Business Card Customization</title>
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -68,9 +74,9 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
 </head>
 
 <body>
-  <div class="container-fluid mt-3">
+<div class="container mt-3">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <button
           class="navbar-toggler"
           type="button"
@@ -87,14 +93,12 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.php">Home</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./products.php">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="./contactus.php">Contact</a>
             </li>
@@ -103,9 +107,7 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             </li>
             <li class="nav-item">
               <a href="./login.php">
-                <button type="button" class="btn learn-more-btn">
-                  Get started
-                </button>
+                <button type="button" class="btn learn-more-btn">Get started</button>
               </a>
             </li>
           </ul>
@@ -196,7 +198,7 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             placeholder="Ex: 0712345678"
             id="mobile" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-4">
           <label for="email" class="form-label">Email</label>
           <input
             type="email"
@@ -205,7 +207,7 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             id="email"
             placeholder="Ex: sample@gmail.com" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-4">
           <label for="address" class="form-label">Address</label>
           <input
             type="text"
@@ -232,6 +234,21 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             </select>
           </div>
         <?php endif; ?>
+        <?php if ($pack === 'delux'): ?>
+          <div class="col-md-6">
+
+            <div class="mb-3">
+              <label for="frontImage" class="form-label">Upload Front Image</label>
+              <input type="file" class="form-control" name="frontImage" id="frontImage" accept="image/*" required>
+            </div>
+  
+            <div class="mb-3">
+              <label for="backImage" class="form-label">Upload Back Image</label>
+              <input type="file" class="form-control" name="backImage" id="backImage" accept="image/*" required>
+            </div>
+          </div>
+        <?php endif; ?>
+
         <!-- <div class="col-12 mt-3">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div> -->
@@ -240,7 +257,7 @@ $pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
   </div>
 
   <!-- Footer Section -->
-  <div class="bg-black border-secondary border-top fixed-bottom">
+  <div class="bg-black border-secondary border-top">
     <div class="container d-flex justify-content-between align-items-center footer-buttons py-3">
       <div class="col-md-6 mt-3">
         <label class="text-secondary"><sup>Total</sup></label>

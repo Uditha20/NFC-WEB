@@ -1,6 +1,6 @@
 <?php
 $price = isset($_GET['price']) ? htmlspecialchars($_GET['price']) : 'N/A';
-$pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
+$pack = isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
 
 ?>
 
@@ -11,8 +11,14 @@ $pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Package Selection</title>
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -27,9 +33,9 @@ $pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
 </head>
 
 <body>
-  <div class="container-fluid mt-3">
+  <div class="container mt-3">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <button
           class="navbar-toggler"
           type="button"
@@ -44,16 +50,14 @@ $pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
           <a class="navbar-brand" href="./index.php"><img src="./asset/img/navlogo.png" alt="" /></a>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="./index.php">Home</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./products.php">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./aboutUs.php">About us</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="./contactus.php">Contact</a>
             </li>
@@ -62,9 +66,7 @@ $pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
             </li>
             <li class="nav-item">
               <a href="./login.php">
-                <button type="button" class="btn learn-more-btn">
-                  Get started
-                </button>
+                <button type="button" class="btn learn-more-btn">Get started</button>
               </a>
             </li>
           </ul>
@@ -135,7 +137,7 @@ $pack=isset($_GET['pack']) ? htmlspecialchars($_GET['pack']) : 'N/A';
       </div>
     </div>
   </main>
-  <div class="bg-black border-secondary border-top fixed-bottom">
+  <div class="bg-black border-secondary">
     <div
       class="container d-flex justify-content-between align-items-center footer-buttons py-3">
       <div class="col-md-6 mt-3">
